@@ -38,14 +38,15 @@ const allClients = [
 
 function performSearch() {
     const searchInput = document.getElementById('searchInput');
-    const query = searchInput.value.toLowerCase().trim().replace(/\s+/g, '-');
+    const query = searchInput.value.toLowerCase().trim();
     
-    if (peopleData[query]) {
-        window.location.href = `profile.html?user=${query}`;
+    if (query === "profile" || query === "nelien-tila-on" || query === "nelien tila-on") {
+        window.location.href = `profile.html?user=nelien-tila-on`;
     } else if (query === "clients" || query === "portfolio" || query === "all") {
         window.location.href = `clients.html`;
     } else if (query !== "") {
-        document.getElementById('errorMessage').innerText = "Try searching 'Nelien Tila-on' or 'Clients'.";
+        
+        document.getElementById('errorMessage').innerText = "Try searching 'Profile' or 'Clients'.";
     }
 }
 
