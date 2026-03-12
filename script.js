@@ -1536,6 +1536,49 @@ function populateLandingPage() {
             'disp-positionTitle': client.positionTitle,
             'disp-positionOverview': client.positionOverview
         };
+        
+
+
+if (client.tools && client.purpose) {
+    const tableBody = document.getElementById('tools-table-body');
+    
+    if (tableBody) {
+        
+        const toolsArray = client.tools.split('\n');
+        const purposeArray = client.purpose.split('\n');
+
+        tableBody.innerHTML = '';
+
+        toolsArray.forEach((tool, index) => {
+            if (tool.trim() !== "") {
+                const row = document.createElement('tr');
+                row.style.borderBottom = "1px solid rgba(255, 255, 255, 0.05)";
+
+                const toolTd = document.createElement('td');
+                toolTd.style.padding = "12px 10px";
+                toolTd.style.verticalAlign = "top";
+                toolTd.style.color = "#34d399";
+                toolTd.style.fontWeight = "bold";
+                toolTd.textContent = tool.replace('•', '').trim();
+
+                const purposeTd = document.createElement('td');
+                purposeTd.style.padding = "12px 10px";
+                purposeTd.style.verticalAlign = "top";
+                purposeTd.style.color = "#cbd5e1";
+                purposeTd.style.lineHeight = "1.6";
+                
+                let pText = purposeArray[index] ? purposeArray[index].replace('•', '').trim() : "";
+                purposeTd.textContent = pText;
+
+                row.appendChild(toolTd);
+                row.appendChild(purposeTd);
+                tableBody.appendChild(row);
+            }
+        });
+        }
+        } else {
+        document.getElementById('tools-table-body').innerHTML = '<tr><td colspan="2" style="padding:10px;">No data available</td></tr>';
+        }
 
         for (let id in mapping) {
             const element = document.getElementById(id);
