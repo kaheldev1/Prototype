@@ -18,7 +18,7 @@ const allClients = [
         secondaryContact: "-", 
         secondaryEmail: "-", 
         website: "https://abacusservice.com/",
-        overview: "Abacus Service Corporation is a global staffing and workforce solutions company that provides recruiting, consulting, and outsourcing services to organizations across multiple industries.",
+        overview: "Abacus Service Corporation is a global staffing and workforce solutions company that provides recruiting, consulting, and outsourcing services to organizations across multiple industries. The company focuses on helping businesses find skilled professionals for contract, project-based, and permanent roles.",
         tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
     },
     { 
