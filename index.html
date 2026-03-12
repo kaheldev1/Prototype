@@ -11,7 +11,6 @@
     <div class="top-banner">
         <img src="img\Outlook-A blue bac.png" alt="Banner">
     </div>
-     
     <div id="errorModal" class="modal">
     <div class="modal-content" style="max-width: 600px;"> 
         <span class="close-btn">&times;</span>
@@ -24,10 +23,9 @@
     </div>
     <div class="container">
         <header>
-            <h1>Search Eastvantage Data</h1>
-            <p>Search for Profile and clients.</p>
+    
         </header>
-
+         
         <div class="search-section">
             <div class="search-input-wrapper">
                 <input type="text" id="searchInput" placeholder="Search here..." autofocus>
@@ -36,7 +34,29 @@
             <p id="errorMessage" class="error-text"></p>
         </div>
     </div>
-
+    <div class="filter-container">
+    <div id="filterMenu" class="filter-menu">
+    <p>Browse by Program:</p>
+    <button onclick="quickSearch('RPO')">RPO</button>
+    <button onclick="quickSearch('Business Support')">Business Support</button>
+    <button onclick="quickSearch('Customer Service')">Customer Service</button>
+    <button onclick="quickSearch('F&A')">F&A (Finance)</button>
+    <button onclick="quickSearch('Software Development')">Software Dev</button>
+    </div>
+    <button id="filterToggle" class="filter-fab">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+        </svg>
+    </button>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
