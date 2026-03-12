@@ -3,33 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Masterlist</title>
+    <title>Client Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img\logoicon.jpg">
+    <style>
+        .split-container {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .left-panel {
+            flex: 1;
+            min-width: 320px;
+            background: rgba(30, 41, 59, 0.5);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #10b981;
+        }
+        .right-panel {
+            flex: 2;
+            min-width: 400px;
+        }
+        .info-block { 
+            margin-bottom: 25px; 
+            background: rgba(255, 255, 255, 0.02);
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        h3 { 
+            color: #10b981; 
+            font-size: 0.9rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+        .badge { 
+            display: inline-block; 
+            padding: 6px 16px; 
+            border-radius: 50px; 
+            background: #064e3b; 
+            color: #34d399; 
+            font-size: 0.8rem;
+            font-weight: bold; 
+            margin-bottom: 15px; 
+        }
+        label {
+            display: block;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+        p { margin: 0; color: #f1f5f9; }
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.05);
+            margin: 15px 0;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-    <header>
-        <h1>Account Masterlist</h1>
-        <p>Complete list of Active and Inactive clients</p>
-    </header>
-
-    <div class="directory-labels">
-        <span class="lbl-name">Account Name</span>
-        <span class="lbl-status">Status</span>
-    </div>
-
-    <div id="fullClientList" class="dropdown-container">
-        </div>
-
-    <a href="index.html" class="floating-home-btn" title="Return to Search">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-    </svg>
+<body style="background-color: #0f172a; color: #f1f5f9; font-family: sans-serif;">
+    <a href="index.html" class="floating-home-btn" title="Back to Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
     </a>
+
+    <div class="container" style="max-width: 1200px; padding: 50px 20px;">
+        <div class="profile-card reveal" style="opacity: 1; transform: translateY(0); background: transparent; border: none; box-shadow: none;">
+            
+            <div class="split-container">
+                
+                <div class="left-panel">
+                    <h3>Operational Details</h3>
+                    <div class="info-item"><label>Status</label><p id="disp-status" class="badge">-</p></div>
+                    
+                    <div class="info-item"><label>Program</label><p id="disp-program">-</p></div>
+                    <div class="info-item"><label>EV Service Model</label><p id="disp-evServiceModel">-</p></div>
+                    
+                    <div class="divider"></div>
+                    
+                    <div class="info-item"><label>Account Director</label><p id="disp-accountDirector">-</p></div>
+                    <div class="info-item"><label>Account Executive</label><p id="disp-accountExecutive">-</p></div>
+                    <div class="info-item"><label>Business Partner</label><p id="disp-businessPartner">-</p></div>
+                    
+                    <div class="divider"></div>
+
+                    <div class="info-item"><label>Service Location</label><p id="disp-serviceLocation">-</p></div>
+                    <div class="info-item"><label>Employee Work Location</label><p id="disp-empWorkLocation">-</p></div>
+                    <div class="info-item"><label>Employee Work Setup</label><p id="disp-empWorkSetup">-</p></div>
+                </div>
+
+                <div class="right-panel">
+                    
+                    <div class="info-block" style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2);">
+                        <h1 id="disp-accountName" style="color: #10b981; margin: 0 0 10px 0;">-</h1>
+                        <div class="info-grid">
+                            <div class="info-item"><label>Client Entity Name</label><p id="disp-entityName">-</p></div>
+                            <div class="info-item"><label>Client Industry</label><p id="disp-clientIndustry">-</p></div>
+                            <div class="info-item"><label>Client Location (Country)</label><p id="disp-clientLocation">-</p></div>
+                            <div class="info-item"><label>Website</label><p><a id="disp-website" href="#" target="_blank" style="color: #34d399; text-decoration: none; font-weight: bold;">Visit Link</a></p></div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Company Overview</h3>
+                        <p id="disp-overview" style="line-height: 1.6; color: #cbd5e1;">-</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Client Contact Persons</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Primary Contact Person</label>
+                                <p id="disp-primaryContact">-</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Primary Email ID</label>
+                                <p id="disp-primaryEmail">-</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Secondary Contact Person</label>
+                                <p id="disp-secondaryContact">-</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Secondary Email ID</label>
+                                <p id="disp-secondaryEmail">-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Tools & Purpose</h3>
+                        <div class="info-grid">
+                            <div class="info-item"><label>Tools</label><p id="disp-tools">-</p></div>
+                            <div class="info-item"><label>Purpose</label><p id="disp-purpose">-</p></div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Position Details</h3>
+                        <div class="info-item"><label>Position / Title</label><p id="disp-positionTitle" style="font-size: 1.2rem; font-weight: bold; color: #10b981;">-</p></div>
+                        <div class="info-item" style="margin-top: 15px;"><label>Position Overview</label><p id="disp-positionOverview" style="line-height: 1.5;">-</p></div>
+                    </div>
+
+                </div> </div> 
+        </div>
     </div>
-    </div>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
