@@ -342,6 +342,20 @@ header { animation-delay: 0.1s; }
     transition: all 0.3s ease;
 }
 
+.info-item:has(#disp-status) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    text-align: center;
+}
+
+#disp-status.badge {
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+}
+
 .info-item:hover {
     background: rgba(16, 185, 129, 0.05);
     border-color: rgba(16, 185, 129, 0.2);
