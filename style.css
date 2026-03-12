@@ -88,15 +88,6 @@ input {
 
 input::placeholder { color: #94a3b8; }
 
-.profile-card, .client-dropdown, .account-section {
-    background: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 12px;
-    margin-bottom: 12px; 
-}
-
-.profile-card { padding: 40px; border-radius: 20px; }
-
 summary {
     display: flex;
     align-items: center;
@@ -184,21 +175,66 @@ button:active { transform: scale(0.95); }
 }
 
 .modal-content {
-    position: relative; 
     background-color: #1e293b;
-    margin: 10% auto;
-    padding: 30px;
-    border: 1px solid #334155;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 12px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 600px; 
+    max-height: 85vh; 
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden; 
+}
+
+#suggestionBox {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px;
+    overflow-y: auto; 
+    flex-grow: 1; 
+}
+
+.suggestion-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: #f1f5f9;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    min-width: 120px; 
+    transition: all 0.3s ease;
+}
+
+.suggestion-btn:hover {
+    background: #10b981; 
+    border-color: #10b981;
+    transform: translateY(-2px);
+}
+
+#suggestionBox::-webkit-scrollbar {
+    width: 6px;
+}
+
+#suggestionBox::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+#suggestionBox::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .close-btn {
     position: absolute; 
     top: 10px;          
-    right: 15px;         
+    right: 15px;          
     color: #94a3b8;
     font-size: 28px;
     font-weight: bold;
@@ -267,10 +303,6 @@ button:active { transform: scale(0.95); }
 @media (max-width: 380px) {
     .lbl-status, .c-status-label {
         width: 70px;
-    }
-    
-    .profile-header h1 {
-        font-size: 1.2rem;
     }
 }
 
@@ -473,3 +505,136 @@ button, .suggestion-btn, a, .info-item {
 .modal {
     transition: opacity 0.3s ease;
 }
+
+.home-edge-btn {
+    position: absolute;
+    top: 15px; 
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #f1f5f9;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home-edge-btn:hover {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: #10b981;
+    color: #10b981;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3);
+}
+
+.home-edge-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.home-edge-btn:hover svg {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .home-edge-btn {
+        top: 10px;
+        left: 10px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.filter-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.filter-fab {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white; /* Kulay ng icon */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 0; /* Sinisiguro na walang padding na sisira sa pwesto ng icon */
+}
+
+/* Siguraduhin na visible ang SVG */
+.filter-fab svg {
+    width: 18px;
+    height: 18px;
+    display: block; /* Para iwas alignment issues */
+    pointer-events: none; /* Para hindi ma-block ang click ng button */
+}
+
+.filter-fab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+}
+
+.filter-menu {
+    position: absolute;
+    bottom: 50px; 
+    left: 0;
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 6px;
+    width: 170px;
+    display: none; 
+    flex-direction: column;
+    gap: 2px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+.filter-menu.active {
+    display: flex;
+    animation: popMenu 0.3s ease-out;
+}
+
+.filter-menu p {
+    color: #94a3b8;
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    margin: 0;
+}
+
+.filter-menu button {
+    background: transparent;
+    color: #f1f5f9;
+    border: none;
+    text-align: left;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.2s;
+}
+
+.filter-menu button:hover {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+@keyframes popMenu {
+    from { opacity: 0; transform: scale(0.9) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
