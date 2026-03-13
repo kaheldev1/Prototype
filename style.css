@@ -562,7 +562,7 @@ button, .suggestion-btn, a, .info-item {
     height: 40px; 
     border-radius: 50%;
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    color: white; /* Kulay ng icon */
+    color: white; 
     border: none;
     cursor: pointer;
     display: flex;
@@ -570,15 +570,14 @@ button, .suggestion-btn, a, .info-item {
     justify-content: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    padding: 0; /* Sinisiguro na walang padding na sisira sa pwesto ng icon */
+    padding: 0; 
 }
 
-/* Siguraduhin na visible ang SVG */
 .filter-fab svg {
     width: 18px;
     height: 18px;
-    display: block; /* Para iwas alignment issues */
-    pointer-events: none; /* Para hindi ma-block ang click ng button */
+    display: block; 
+    pointer-events: none; 
 }
 
 .filter-fab:hover {
