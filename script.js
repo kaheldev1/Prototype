@@ -3153,3 +3153,9 @@ document.addEventListener('keypress', function (e) {
         }
     }
 });
+function logout() {
+    document.getElementById('mainContent').style.display = 'none';
+    document.getElementById('loginSection').style.display = 'flex';
+    document.getElementById('loginUsername').value = '';
+    document.getElementById('loginPassword').value = '';
+}
