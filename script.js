@@ -1675,30 +1675,30 @@ const allClients = [
     positionTitle: "-", 
     positionOverview: "-"
 },
-   {
-    name: "Pact Group", 
-    status: "Active", 
-    entityName: "Pact Group Industries",
-    serviceLocation: "Philippines",
-    evServiceModel: "Staff Extension",
-    program: ["IT Operations"],
-    businessPartner: "Jonas Soria",
-    accountDirector: "Sipin Sidharthan",
-    accountExecutive: "Mark Casumpang", 
-    empWorkLocation: "PH - FLT / EBSI",
-    empWorkSetup: "Work From Home",
-    clientLocation: "AUS - Australia",
-    industry: "Manufacturing", 
-    primaryContact: "Stuart Kluge",
-    primaryEmail: "stuart.kluge@pactgroup.com",
-    secondaryContact: "Shirley Ferrier", 
-    secondaryEmail: "shirley.ferrier@pactgroup.com", 
-    website: "https://pactgroup.com/",
-    overview: "Pact Group is a leading provider of sustainable packaging solutions and industrial manufacturing services in Australia.",
-    tools: "Freshservice, Bark", 
-    purpose: "Client communication platform, possibly for messaging, reminders, or follow-ups.", 
-    positionTitle: "Service Desk Engineers\nSecurity Analyst\nCommunication Lead", 
-    positionOverview: "-"
+  { 
+    "name": "Pact Group", 
+    "status": "Active", 
+    "entityName": "Pact Group Industries (Asia) Pty Ltd, and Pact Group Industries (ANZ) Pty Ltd",
+    "serviceLocation": "Philippines",
+    "evServiceModel": "Staff Extension",
+    "program": ["IT Operations"],
+    "businessPartner": "Jonas Soria",
+    "accountDirector": "Sipin Sidharthan",
+    "accountExecutive": "Mark Casumpang", 
+    "empWorkLocation": "PH - FLT / EBSI",
+    "empWorkSetup": "Work From Home",
+    "clientLocation": "AUS - Australia",
+    "industry": "Manufacturing", 
+    "primaryContact": "Stuart Kluge",
+    "primaryEmail": "stuart.kluge@pactgroup.com",
+    "secondaryContact": "Shirley Ferrier", 
+    "secondaryEmail": "shirley.ferrier@pactgroup.com", 
+    "website": "https://pactgroup.com/",
+    "overview": "",
+    "tools": "• Freshservice", 
+    "purpose": "• CRM", 
+    "positionTitle": "Service Desk Engineers\nSecurity Analyst\nCommunication Lead", 
+    "positionOverview": ""
 },
    {
     name: "Promosuns", 
@@ -2925,26 +2925,38 @@ if (toolsTableBody && client.tools !== "-") {
         }
 
         for (let id in mapping) {
-            const element = document.getElementById(id);
-            if (element) {
-                if (mapping[id] && mapping[id] !== "N/A") {
-                    if (id === 'disp-primaryEmail' || id === 'disp-secondaryEmail') {
-                        const emails = mapping[id].split(', ');
-                        element.innerHTML = emails.map(email => 
-                            email.trim() !== "-" ? `<a href="mailto:${email.trim()}" style="color: #34d399; display: block; margin-bottom: 5px; text-decoration: none;">${email.trim()}</a>` : "-"
-                        ).join('');
-                    } 
-                    else if (id === 'disp-primaryContact' || id === 'disp-secondaryContact') {
-                        element.innerHTML = mapping[id].split(', ').join('<br>');
-                    }
-                    else {
-                        element.innerText = mapping[id];
-                    }
-                } else {
-                    const itemContainer = element.closest('.info-item');
-                    if (itemContainer) itemContainer.style.display = "none";
+    const element = document.getElementById(id);
+    if (element) {
+        if (mapping[id] && mapping[id] !== "N/A" && mapping[id] !== "NA" && mapping[id] !== "-") {
+            
+            if (id === 'disp-status') {
+                element.innerText = mapping[id];
+                if (mapping[id].toLowerCase() === 'active') {
+                    element.style.backgroundColor = "#064e3b"; 
+                    element.style.color = "#34d399";          
+                } else if (mapping[id].toLowerCase() === 'inactive') {
+                    element.style.backgroundColor = "#7f1d1d"; 
+                    element.style.color = "#fca5a5";           
                 }
+            } 
+
+            else if (id === 'disp-primaryEmail' || id === 'disp-secondaryEmail') {
+                const emails = mapping[id].split(', ');
+                element.innerHTML = emails.map(email => 
+                    email.trim() !== "-" ? `<a href="mailto:${email.trim()}" style="color: #34d399; display: block; margin-bottom: 5px; text-decoration: none;">${email.trim()}</a>` : "-"
+                ).join('');
+            } 
+            else if (id === 'disp-primaryContact' || id === 'disp-secondaryContact') {
+                element.innerHTML = mapping[id].split(', ').join('<br>');
             }
+            else {
+                element.innerText = mapping[id];
+            }
+        } else {
+            const itemContainer = element.closest('.info-item');
+            if (itemContainer) itemContainer.style.display = "none";
+        }
+        }
         }
 
         const webLink = document.getElementById('disp-website');
