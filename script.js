@@ -3134,3 +3134,22 @@ function quickSearch(programName) {
         performSearch(); 
     }
 }
+function checkLogin() {
+    const user = document.getElementById('loginUsername').value;
+    const pass = document.getElementById('loginPassword').value;
+
+    if (user === 'admin' && pass === 'admin123') {
+        document.getElementById('loginSection').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'block';
+    } else {
+        document.getElementById('loginError').style.display = 'block';
+    }
+}
+document.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        const activeElement = document.activeElement;
+        if (activeElement.id === 'loginUsername' || activeElement.id === 'loginPassword') {
+            checkLogin();
+        }
+    }
+});
