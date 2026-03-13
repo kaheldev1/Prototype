@@ -674,3 +674,249 @@ button, .suggestion-btn, a, .info-item {
 .login-box button {
     width: 100%;
 }
+.glow-error {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+    transition: all 0.3s ease;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    75% { transform: translateX(8px); }
+}
+.shake { animation: shake 0.4s ease-in-out; }
+.partner-name {
+    font-size: 1.4rem;
+    margin: 0 0 15px 0;
+    color: #ffffff; 
+    font-weight: 700;
+    padding-left: 0;
+    border-left: none;
+}
+
+.role-keyword {
+    color: #10b981 !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.company-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.biz-partner-fab {
+    position: fixed;
+    bottom: 100px; 
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: #1e293b;
+    color: #10b981;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+}
+
+.biz-partner-fab:hover {
+    background-color: #10b981;
+    color: #ffffff;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.biz-partner-fab::after {
+    content: "Business Partners";
+    position: absolute;
+    right: 70px;
+    background: #1e293b;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.biz-partner-fab:hover::after {
+    opacity: 1;
+    right: 65px;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse-green {
+    0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+@keyframes revealBlur {
+    from { filter: blur(10px); opacity: 0; }
+    to { filter: blur(0); opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.top-banner img {
+    animation: revealBlur 1s ease-out;
+}
+
+.biz-partner-fab {
+    animation: float 3s ease-in-out infinite;
+}
+
+.active .c-status-label {
+    animation: pulse-green 2s infinite;
+}
+
+.info-item {
+    animation: slideInRight 0.5s ease-out forwards;
+}
+
+.info-item:nth-child(2) { animation-delay: 0.1s; }
+.info-item:nth-child(3) { animation-delay: 0.2s; }
+.info-item:nth-child(4) { animation-delay: 0.3s; }
+
+.modal-content {
+    animation: scaleUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.search-input-wrapper:focus-within {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    border-color: #10b981;
+}
+
+summary:active {
+    transform: scale(0.98);
+}
+
+.suggestion-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.suggestion-btn:hover {
+    letter-spacing: 0.5px;
+    background: #10b981;
+}
+@keyframes cardEntrance {
+    from { 
+        opacity: 0; 
+        transform: scale(0.9) translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1) translateY(0); 
+    }
+}
+
+@keyframes logoutFade {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.9); }
+}
+
+@keyframes listSlide {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.partner-card {
+    background: rgba(30, 41, 59, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: cardEntrance 0.6s ease-out backwards;
+}
+
+.partner-card:hover {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.3);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.company-list li {
+    animation: listSlide 0.4s ease-out backwards;
+    transition: color 0.2s;
+}
+
+.company-list li:hover {
+    color: #10b981;
+    transform: translateX(5px);
+}
+
+.partner-card:nth-child(1) { animation-delay: 0.1s; }
+.partner-card:nth-child(2) { animation-delay: 0.2s; }
+.partner-card:nth-child(3) { animation-delay: 0.3s; }
+.partner-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes logoutExit {
+    0% { opacity: 1; transform: scale(1); filter: blur(0); }
+    100% { opacity: 0; transform: scale(0.9); filter: blur(10px); }
+}
+
+.logout-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(5px);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.logout-btn:hover {
+    background: #ef4444;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(239, 68, 68, 0.4);
+    border-color: #ef4444;
+}
+
+.logout-btn:active {
+    transform: translateY(0) scale(0.95);
+}
+
+.logging-out-process {
+    animation: logoutExit 0.5s ease-in forwards;
+    pointer-events: none;
+}
