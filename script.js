@@ -1,267 +1,306 @@
 const allClients = [
     { 
-        name: "Abacus Service Corporation", 
-        status: "Active", 
-        entityName: "Abacus Service Corporation",
-        serviceLocation: "Philippines",
-        evServiceModel: "Staff Extension",
-        program: ["RPO", "Business Support"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "NA", 
-        empWorkLocation: "PH - SFS",
-        empWorkSetup: "Hybrid",
-        clientLocation: "USA - United States of America",
-        industry: "RPO / Recruitment", 
-        primaryContact: "Sam Akunuri, April Szlaga, Naveen Moturi",
-        primaryEmail: "sam@abacusservice.com, april@abacusservice.com, naveen@abacusservice.com",
-        secondaryContact: "-", 
-        secondaryEmail: "-", 
-        website: "https://abacusservice.com/",
-        overview: "Abacus Service Corporation is a global staffing and workforce solutions company that provides recruiting, consulting, and outsourcing services to organizations across multiple industries. The company focuses on helping businesses find skilled professionals for contract, project-based, and permanent roles.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
+    name: "Abacus Service Corporation", 
+    status: "Active", 
+    entityName: "Abacus Service Corporation",
+    serviceLocation: "Philippines",
+    evServiceModel: "Staff Extension",
+    program: ["RPO", "Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "NA", 
+    empWorkLocation: "PH - SFS",
+    empWorkSetup: "Hybrid",
+    clientLocation: "USA - United States of America",
+    industry: "RPO / Recruitment", 
+    primaryContact: "Sam Akunuri, April Szlaga, Naveen Moturi",
+    primaryEmail: "sam@abacusservice.com, april@abacusservice.com, naveen@abacusservice.com",
+    secondaryContact: "-", 
+    secondaryEmail: "-", 
+    website: "https://abacusservice.com/",
+    overview: "Abacus Service Corporation is a global staffing and workforce solutions company that provides recruiting, consulting, and outsourcing services to organizations across multiple industries. The company focuses on helping businesses find skilled professionals for contract, project-based, and permanent roles.",
+    tools: "• JobDiva\n• Monster\n• Time Doctor\n• Passport", 
+    purpose: "• Job Diva is an applicant tracking system and recruitment CRM that recruiters use to manage candidate pipelines.\n• Monster is a job board and talent sourcing platform where recruiters post job openings and search resumes.\n• Time Doctor is a time tracking and productivity tool that helps monitor work hours and ensure accountability.\n• Passport is an onboarding or HR platform used to submit candidate information and manage compliance.", 
+    positionTitle: "US IT Recruiter\nLight Industrial Recruiter", 
+    positionOverview: "A US IT Recruiter specializes in sourcing, screening, and placing candidates for information technology positions across the U.S. They focus on roles such as software developers and network engineers.\nA Light Industrial Recruiter focuses on recruiting for operational and volume-based roles such as warehouse associates, assembly line workers, and machine operators."
+},
     { 
-        name: "Bundled Management", 
-        status: "Active", 
-        entityName: "Kass Management Services, Inc.",
-        serviceLocation: "Philippines",
-        evServiceModel: "Staff Extension",
-        program: ["F&A"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Rachna Gaba", 
-        empWorkLocation: "PH - SFS",
-        empWorkSetup: "Work From Office",
-        clientLocation: "USA - United States of America",
-        industry: "Construction", 
-        primaryContact: "Brandon Arnold",
-        primaryEmail: "brandon@bundledmgmt.com",
-        secondaryContact: "Shawnell Corn, Arben Fetahi", 
-        secondaryEmail: "shawnell.corn@nestcorepartners.com, arben.fetahi@proinvestmgmt.com", 
-        website: "https://www.bundledmgmt.com/",
-        overview: "Bundled Management Solutions LLC (commonly called Bundled Management) is a U.S.-based real estate and property management company that provides operational and administrative services for residential communities, homeowner associations (HOAs), and real estate investors. The company focuses on delivering integrated property management services that combine leasing, maintenance, and financial management into a single platform.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
-    { 
-        name: "CATO", 
-        status: "Active", 
-        entityName: "CATO Logistics P/L",
-        serviceLocation: "Philippines",
-        evServiceModel: "Managed Services",
-        program: ["Business Support"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Rachna Gaba", 
-        empWorkLocation: "PH - SFS",
-        empWorkSetup: "Work From Office",
-        clientLocation: "AUS - Australia",
-        industry: "Logistics", 
-        primaryContact: "Kieran Cato",
-        primaryEmail: "kieran@catolocationservices.com.au",
-        secondaryContact: "Anna Rosa", 
-        secondaryEmail: "anna@catolocationservices.com.au", 
-        website: "https://catolocationservices.com.au/",
-        overview: "CATO Location Services is an Australia-based company that provides production support, traffic management, and safety services for the film, television, events, and construction industries. The company helps coordinate logistics, safety, and on-site operations for large productions, public events, and infrastructure projects.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
+    name: "Bundled Management", 
+    status: "Active", 
+    entityName: "Kass Management Services, Inc.",
+    serviceLocation: "Philippines",
+    evServiceModel: "Staff Extension",
+    program: ["F&A"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Rachna Gaba", 
+    empWorkLocation: "PH - SFS",
+    empWorkSetup: "Work From Office",
+    clientLocation: "USA - United States of America",
+    industry: "Construction", 
+    primaryContact: "Brandon Arnold",
+    primaryEmail: "brandon@bundledmgmt.com",
+    secondaryContact: "Shawnell Corn, Arben Fetahi", 
+    secondaryEmail: "shawnell.corn@nestcorepartners.com, arben.fetahi@proinvestmgmt.com", 
+    website: "https://www.bundledmgmt.com/",
+    overview: "Bundled Management Solutions LLC (commonly called Bundled Management) is a U.S.-based real estate and property management company that provides operational and administrative services for residential communities, homeowner associations (HOAs), and real estate investors. The company focuses on delivering integrated property management services that combine leasing, maintenance, and financial management into a single platform.",
+    tools: "• Microsoft Office Tools\n• BU Web\n• AppFolio\n• AvidXchange\n• Outlook\n• BU App\n• ClickPay\n• SouthData\n• Adobe Acrobat\n• RingCentral\n• Banks and Suppliers Portal", 
+    purpose: "• Use and edit Excel, CSV, PDF, OneDrive, Word documents; communicate via Teams internally\n• Monitor and review bank account balances\n• Record and upload invoices\n• Submit invoices requiring board approval\n• Send and receive email updates; track invoice statuses\n• Upload Positive Pay files for check processing\n• Review owner payments and assist owners in accessing their ClickPay accounts\n• Mail notices and letters to associations\n• Edit forms required by vendors to update information\n• Make calls and send texts to vendors and owners\n• Access bank statements and transactions for reconciliations; access supplier portals to pay and download invoices", 
+    positionTitle: "Accounts Payable\nBookkeeper", 
+    positionOverview: "Responsible for managing the end-to-end billing and payment processes. Daily tasks include recording all invoices in AppFolio, ensuring timely manual payments, maintaining the Billing Timesheet, monitoring BankUnited account balances, and handling Positive Pay files.\nResponsible for managing communication, payments, and document processing. Key tasks include reviewing owner payments via ClickPay, mailing notices via SouthData, editing vendor forms with Adobe, and performing bank reconciliations and supplier portal management."
+},
+   { 
+    name: "CATO", 
+    status: "Active", 
+    entityName: "CATO Logistics P/L",
+    serviceLocation: "Philippines",
+    evServiceModel: "Managed Services",
+    program: ["Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Rachna Gaba", 
+    empWorkLocation: "PH - SFS",
+    empWorkSetup: "Work From Office",
+    clientLocation: "AUS - Australia",
+    industry: "Logistics", 
+    primaryContact: "Kieran Cato",
+    primaryEmail: "kieran@catolocationservices.com.au",
+    secondaryContact: "Anna Rosa", 
+    secondaryEmail: "anna@catolocationservices.com.au", 
+    website: "https://catolocationservices.com.au/",
+    overview: "CATO Location Services is an Australia-based company that provides production support, traffic management, and safety services for the film, television, events, and construction industries. The company helps coordinate logistics, safety, and on-site operations for large productions, public events, and infrastructure projects.",
+    tools: "• RapidPlan\n• Google Earth", 
+    purpose: "• RapidPlan is a traffic planning and road design software used to create, model, and optimize traffic flow. Planners use it to simulate patterns and test scenarios.\n• Google Earth is a geospatial visualization tool that allows planners to view real-world maps and terrain to understand the geographic context of roads.", 
+    positionTitle: "Traffic Planner", 
+    positionOverview: "Responsible for analyzing, designing, and optimizing traffic flow to ensure safe and efficient movement of vehicles and pedestrians. They evaluate current road conditions, traffic patterns, and infrastructure to develop plans that reduce congestion, improve travel times, and enhance safety through simulations and modeling."
+},
     
     { 
-        name: "Cleveland Kitchen", 
-        status: "Active", 
-        entityName: "Cleveland Kitchen Co.",
-        serviceLocation: "Philippines",
-        evServiceModel: "Managed Services",
-        program: ["Customer Service"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Rachna Gaba", 
-        empWorkLocation: "PH - SFS",
-        empWorkSetup: "Work From Office",
-        clientLocation: "USA - United States of America",
-        industry: "Food & Beverage", 
-        primaryContact: "Sam Buddenbaum, Dareen Buck, Min Chung, Ben Vandertill",
-        primaryEmail: "sbuddenbaum@clevelandkraut.com, dbuck@clevelandkitchen.com, mchung@clevelandkraut.com, bvandertill@clevelandkitchen.com",
-        secondaryContact: "-", secondaryEmail: "-", 
-        website: "https://www.clevelandkitchen.com/",
-        overview: "Cleveland Kitchen is an American culinary food brand that specializes in fresh, fermented foods designed to be flavorful, gut‑healthy, and versatile in everyday meals. The company makes products such as sauerkraut, kimchi, pickles, pickled vegetables, coleslaw, and sauces—all crafted through fermentation to deliver natural probiotics and bold taste.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
+    name: "Cleveland Kitchen", 
+    status: "Active", 
+    entityName: "Cleveland Kitchen Co.",
+    serviceLocation: "Philippines",
+    evServiceModel: "Managed Services",
+    program: ["Customer Service"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Rachna Gaba", 
+    empWorkLocation: "PH - SFS",
+    empWorkSetup: "Work From Office",
+    clientLocation: "USA - United States of America",
+    industry: "Food & Beverage", 
+    primaryContact: "Sam Buddenbaum, Dareen Buck, Min Chung, Ben Vandertill",
+    primaryEmail: "sbuddenbaum@clevelandkraut.com, dbuck@clevelandkitchen.com, mchung@clevelandkraut.com, bvandertill@clevelandkitchen.com",
+    secondaryContact: "-", 
+    secondaryEmail: "-", 
+    website: "https://www.clevelandkitchen.com/",
+    overview: "Cleveland Kitchen is an American culinary food brand that specializes in fresh, fermented foods designed to be flavorful, gut‑healthy, and versatile in everyday meals. The company makes products such as sauerkraut, kimchi, pickles, pickled vegetables, coleslaw, and sauces—all crafted through fermentation to deliver natural probiotics and bold taste.",
+    tools: "• WhereFour\n• Microsoft Sharepoint", 
+    purpose: "• Wherefour is a platform used to manage inventory, production, orders, and product traceability. The system helps monitor production activities and track product movement.\n• Microsoft SharePoint serves as a centralized location for the team to upload, access, and manage all incoming operational files required for day-to-day production tasks.", 
+    positionTitle: "Data Entry Specialist", 
+    positionOverview: "Involves overseeing daily production operations, managing the intake and documentation of operational files in SharePoint, and monitoring work orders. They ensure accurate recording of raw materials and production results, maintain traceability through barcodes, and track performance using reporting tools like Power BI to ensure operational efficiency."
+},
     { 
-        name: "El Connect", 
-        status: "Active", 
-        entityName: "EL Connect Pte Ltd",
-        serviceLocation: "Philippines",
-        evServiceModel: "Managed Services",
-        program: ["Customer Service"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Rachna Gaba", 
-        empWorkLocation: "PH - SFS",
-        empWorkSetup: "Work From Office",
-        clientLocation: "SGP - Singapore",
-        industry: "RPO / Recruitment", 
-        primaryContact: "Mike Chow",
-        primaryEmail: "mike@elconnect.sg",
-        secondaryContact: "Esther Yee Shu Qi", 
-        secondaryEmail: "esther@elconnect.sg", 
-        website: "https://elconnect.sg/",
-        overview: "EL Connect Pte Ltd is a Singapore‑based workforce technology and job‑matching platform that connects job seekers with employers, particularly for part‑time, flexible, and casual work opportunities across industries.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
+    name: "El Connect", 
+    status: "Active", 
+    entityName: "EL Connect Pte Ltd",
+    serviceLocation: "Philippines",
+    evServiceModel: "Managed Services",
+    program: ["Customer Service"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Rachna Gaba", 
+    empWorkLocation: "PH - SFS",
+    empWorkSetup: "Work From Office",
+    clientLocation: "SGP - Singapore",
+    industry: "RPO / Recruitment", 
+    primaryContact: "Mike Chow",
+    primaryEmail: "mike@elconnect.sg",
+    secondaryContact: "Esther Yee Shu Qi", 
+    secondaryEmail: "esther@elconnect.sg", 
+    website: "https://elconnect.sg/",
+    overview: "EL Connect Pte Ltd is a Singapore‑based workforce technology and job‑matching platform that connects job seekers with employers, particularly for part‑time, flexible, and casual work opportunities across industries.",
+    tools: "• EL Connect App v1\n• EL Connect App v2", 
+    purpose: "• Used to track Job IDs, mark attendance for freelancers, and manage job postings. Essential for operational tracking and attendance management.\n• Used to access freelancer accounts, check balances, view schedules, and handle support tickets to ensure freelancer issues are managed effectively.", 
+    positionTitle: "Customer Support / Admin Assistant", 
+    positionOverview: "Responsible for managing and supporting the daily deployment, monitoring, and administrative tasks related to freelancers and shift operations. The focus is on ensuring smooth communication, verifying attendance, supporting shift transitions, and handling administrative functions. The role involves coordinating shifts, assisting with onboarding, monitoring WhatsApp channels, and performing operational system tasks."
+},
     { 
-        name: "Henry Jackson Foundation", 
-        status: "Active", 
-        entityName: "The Henry M. Jackson Foundation",
-        serviceLocation: "Philippines",
-        evServiceModel: "Staffing Solutions",
-        program: ["Business Support"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Mark Casumpang", 
-        empWorkLocation: "PH - FLT / EBSI",
-        empWorkSetup: "Work From Home",
-        clientLocation: "USA - United States of America",
-        industry: "Healthcare", 
-        primaryContact: "Mary Schmitz, Haoyu Qian, Teresita Prombuth",
-        primaryEmail: "maschmitz@hivresearch.org, HQian@hivresearch.org, prombutht@hiv-th.org",
-        secondaryContact: "Melissa Stewart", 
-        secondaryEmail: "MStewart@hjf.org", 
-        website: "https://www.hjf.org/",
-        overview: "The Henry M. Jackson Foundation for the Advancement of Military Medicine (HJF) is a global nonprofit organization dedicated to advancing military medicine through scientific research, program and project management, and partnerships that improve health outcomes for members of the U.S. Armed Forces, veterans, their families, and civilian populations. It was established by an act of the U.S. Congress in 1983 and named in honor of U.S. Senator Henry M. “Scoop” Jackson, who sponsored the legislation authorizing its creation.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
+    name: "Henry Jackson Foundation", 
+    status: "Active", 
+    entityName: "The Henry M. Jackson Foundation",
+    serviceLocation: "Philippines",
+    evServiceModel: "Staffing Solutions",
+    program: ["Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Mark Casumpang", 
+    empWorkLocation: "PH - FLT / EBSI",
+    empWorkSetup: "Work From Home",
+    clientLocation: "USA - United States of America",
+    industry: "Healthcare", 
+    primaryContact: "Mary Schmitz, Haoyu Qian, Teresita Prombuth",
+    primaryEmail: "maschmitz@hivresearch.org, HQian@hivresearch.org, prombutht@hiv-th.org",
+    secondaryContact: "Melissa Stewart", 
+    secondaryEmail: "MStewart@hjf.org", 
+    website: "https://www.hjf.org/",
+    overview: "The Henry M. Jackson Foundation for the Advancement of Military Medicine (HJF) is a global nonprofit organization dedicated to advancing military medicine through scientific research, program and project management, and partnerships that improve health outcomes for members of the U.S. Armed Forces, veterans, their families, and civilian populations. It was established by an act of the U.S. Congress in 1983 and named in honor of U.S. Senator Henry M. “Scoop” Jackson, who sponsored the legislation authorizing its creation.",
+    tools: "• Synertrade", 
+    purpose: "• SynerTrade is a digital procurement and spend management platform used to manage sourcing, supplier relationships, and procurement activities more efficiently. Users can run e-sourcing events like tenders and auctions, track spending, and analyze performance.", 
+    positionTitle: "Technical Director – Clinical Services\nOperations Manager\nProgram Assistant\nLaboratory Technician", 
+    positionOverview: "The Technical Director oversees clinical operations and ensures medical services are delivered safely and in compliance with regulatory standards. They manage clinical staff, coordinate with laboratories, and ensure quality control and protocol implementation.\nThe Operations Manager handles day-to-day management of the medical facility, ensuring smooth workflow across departments. They manage scheduling, resource allocation, and logistics while coordinating between clinical and administrative teams.\nThe Program Assistant provides administrative and logistical support to clinical programs. Responsibilities include maintaining records, coordinating meetings, assisting with reporting, and ensuring programmatic tasks are completed accurately.\nThe Laboratory Technician performs laboratory tests and procedures to support clinical operations. They collect and process samples, operate lab equipment, and ensure the accuracy of results for patient care and research outcomes."
+},
+   { 
+    name: "Online Therapy Centre", 
+    status: "Active", 
+    entityName: "OTC Mental Health Services Inc.",
+    serviceLocation: "Philippines",
+    evServiceModel: "Managed Services",
+    program: ["Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Rachna Gaba", 
+    empWorkLocation: "CAN - Canada",
+    empWorkSetup: "Work From Home",
+    clientLocation: "CAN - Canada",
+    industry: "Healthcare", 
+    primaryContact: "Laura Lord",
+    primaryEmail: "laura.lord@onlinetherapycentre.com",
+    secondaryContact: "-", 
+    secondaryEmail: "-", 
+    website: "https://onlinetherapycentre.com/",
+    overview: "Online Therapy Centre is a mental health services provider and therapy platform based in Ontario, Canada that offers online and in‑person psychological and psychiatric support to individuals, families, and groups. Its goal is to make quality mental health care accessible through modern virtual formats while also maintaining options for in‑person sessions.",
+    tools: "• Jane App\n• Grasshopper\n• Webmail\n• Microsoft Outlook & Tools\n• Gmail\n• Bark\n• Notion\n• Adobe Photoshop\n• QuickBooks", 
+    purpose: "• Scheduling, booking, and client management for mental health practitioners; tracks appointments, client records, and billing.\n• Virtual phone system for handling client calls, voicemails, and call forwarding.\n• Accessing and managing email communication via a browser-based email client.\n• Email, calendar, contacts, and collaboration tools like Teams for internal communication and scheduling.\n• Email communication, often for external clients, notifications, or integrations with other apps.\n• Client communication platform for messaging, reminders, or follow-ups.\n• Organizing internal notes, project management, knowledge base, and documentation.\n• Creating and editing visuals for marketing, social media, or educational content.\n• Managing accounting, invoices, and financial records for the practice.", 
+    positionTitle: "Bookkeeper\nGraphic Designer\nWeb Designer", 
+    positionOverview: "Responsible for managing financial records, processing invoices, tracking expenses, reconciling accounts, and ensuring accurate bookkeeping using QuickBooks.\nCreates visual content for marketing, social media, educational materials, and client communications using Adobe Photoshop.\nDesigns, maintains, and updates the organization’s website, ensuring it is user-friendly, accessible, and visually aligned with the brand."
+},
+   { 
+    name: "Speedie Waste", 
+    status: "Active", 
+    entityName: "Speedie Waste Pty Ltd",
+    serviceLocation: "Philippines",
+    evServiceModel: "Managed Services",
+    program: ["Customer Service", "Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Rachna Gaba", 
+    empWorkLocation: "PH - SFS",
+    empWorkSetup: "Work From Office",
+    clientLocation: "AUS - Australia",
+    industry: "Utilities & Environment", 
+    primaryContact: "Jessica Barilla",
+    primaryEmail: "jbarilla@speediewaste.com.au",
+    secondaryContact: "Marie Dulce, Ashleigh Cooke, Rachael Walsh", 
+    secondaryEmail: "mdulce@speediewaste.com.au, ashleigh@speediewaste.com.au, rwalsh@speediewaste.com.au", 
+    website: "https://www.speediewaste.com.au/",
+    overview: "Speedie Waste Australia Pty Ltd (commonly known as Speedie Waste & Recycle) is an established Australian waste management and recycling company that provides comprehensive, sustainable waste solutions to commercial, industrial, and domestic clients throughout Victoria, particularly around Melbourne. The business has a long family‑owned history and focuses on environmental responsibility and tailored waste services.",
+    tools: "• Wastedge\n• 3CX\n• Outlook\n• Teams", 
+    purpose: "• CRM/software used by waste and recycling companies to manage bookings, reschedule services, arrange bin replacements, and update customer accounts.\n• Phone system used for inbound and outbound calls and communication with customers and the team.\n• Email tool for booking requests, service inquiries, and internal communication regarding customer concerns.\n• Used for internal communication and coordination with team members.", 
+    positionTitle: "Customer Care Officer\nAdministrative Assistant", 
+    positionOverview: "Responsible for managing daily customer interactions, handling booking requests, addressing inquiries, documenting complaints, and ensuring proper escalation to relevant teams while guiding customers on service requirements.\nSupports daily office operations by managing scheduling, handling client communications, organizing files, and providing general administrative support to ensure smooth office workflow."
+},
     { 
-        name: "Online Therapy Centre", 
-        status: "Active", 
-        entityName: "OTC Mental Health Services Inc.",
-        serviceLocation: "Philippines",
-        evServiceModel: "Managed Services",
-        program: ["Business Support"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Rachna Gaba", 
-        empWorkLocation: "CAN - Canada",
-        empWorkSetup: "Work From Home",
-        clientLocation: "CAN - Canada",
-        industry: "Healthcare", 
-        primaryContact: "Laura Lord",
-        primaryEmail: "laura.lord@onlinetherapycentre.com",
-        secondaryContact: "-", secondaryEmail: "-", 
-        website: "https://onlinetherapycentre.com/",
-        overview: "Online Therapy Centre is a mental health services provider and therapy platform based in Ontario, Canada that offers online and in‑person psychological and psychiatric support to individuals, families, and groups. Its goal is to make quality mental health care accessible through modern virtual formats while also maintaining options for in‑person sessions.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
+    name: "TeamHealth", 
+    status: "Active", 
+    entityName: "AmeriTeam Services, LLC",
+    serviceLocation: "Philippines",
+    evServiceModel: "Staff Extension",
+    program: ["Software Development"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Mark Casumpang", 
+    empWorkLocation: "PH - FLT / EBSI",
+    empWorkSetup: "Hybrid",
+    clientLocation: "USA - United States of America",
+    industry: "Healthcare", 
+    primaryContact: "Rebecca Myles, Brad Guilford, David Edwards",
+    primaryEmail: "Rebecca_Myles@teamhealth.com, Brad_Guilford@teamhealth.com, david_edwards@teamhealth.com",
+    secondaryContact: "Kim Chenault, Shristi Shrestha, Brian Fisher, Nicholas Karagiozis", 
+    secondaryEmail: "Kim_Chenault@teamhealth.com, Shristi_Shrestha@teamhealth.com, Brian_Fisher@teamhealth.com, Nicholas_Karagiozis@teamhealth.com", 
+    website: "https://www.teamhealth.com/",
+    overview: "TeamHealth Holdings, Inc. (commonly known as TeamHealth) is a large U.S. healthcare services organization that provides outsourced clinical staffing, management, and physician practice services to hospitals, post‑acute care facilities, and other healthcare partners across the United States.",
+    tools: "• Microsoft Outlook & Tools\n• Smartsheet\n• Power BI\n• Azure DevOps\n• Zoom\n• Tableau\n• Blueworks Live\n• Lucidchart\n• Workday Tenant", 
+    purpose: "• Used for documenting KPI validation, testing/process documentation, meeting notes, and tracking communication with SMEs.\n• Tracking testing activities, project updates, issues, and progress; summarizing QA progress.\n• Validating dashboards to ensure KPIs, filters, and visualizations meet business requirements.\n• Reviewing user stories, tracking project tasks, and monitoring development progress.\n• Conducting stakeholder meetings, requirement discussions, and project coordination.\n• Comparing dashboards with Power BI to ensure data accuracy and consistency.\n• Reviewing and analyzing business process diagrams and workflows for HCM modules.\n• Designing and maintaining process flow diagrams supporting QA and project activities.\n• Accessing HCM workflows and system processes across Payroll, Core, Security, and Compensation modules.", 
+    positionTitle: "RPA Engineer\nBusiness Intelligence\nSoftware Quality Assurance Engineer", 
+    positionOverview: "Designing, developing, and maintaining robotic process automation solutions to streamline business workflows. Responsibilities include analyzing processes, creating scripts, and ensuring bot accuracy.\nDesigning and maintaining BI dashboards and reports. Tasks include validating KPIs, integrating data sources, optimizing SQL queries, and presenting insights to stakeholders.\nLead QA initiatives by designing test frameworks, executing test scenarios, and ensuring software and dashboards meet business requirements through rigorous documentation and coordination."
+},
     { 
-        name: "Speedie Waste", 
-        status: "Active", 
-        entityName: "Speedie Waste Pty Ltd",
-        serviceLocation: "Philippines",
-        evServiceModel: "Managed Services",
-        program: ["Customer Service", "Business Support"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Rachna Gaba", 
-        empWorkLocation: "PH - SFS",
-        empWorkSetup: "Work From Office",
-        clientLocation: "AUS - Australia",
-        industry: "Utilities & Environment", 
-        primaryContact: "Jessica Barilla",
-        primaryEmail: "jbarilla@speediewaste.com.au",
-        secondaryContact: "Marie Dulce, Ashleigh Cooke, Rachael Walsh", 
-        secondaryEmail: "mdulce@speediewaste.com.au, ashleigh@speediewaste.com.au, rwalsh@speediewaste.com.au", 
-        website: "https://www.speediewaste.com.au/",
-        overview: "Speedie Waste Australia Pty Ltd (commonly known as Speedie Waste & Recycle) is an established Australian waste management and recycling company that provides comprehensive, sustainable waste solutions to commercial, industrial, and domestic clients throughout Victoria, particularly around Melbourne. The business has a long family‑owned history and focuses on environmental responsibility and tailored waste services.",
-        tools: "• Wastedge\n• 3CX\n• Outlook\n• Teams", 
-        purpose: "• CRM/software used to manage bookings, reschedule services, bin replacements, and customer accounts.\n• Phone system for inbound and outbound calls with customers and the team.\n• Email tool for booking requests, service inquiries, and internal updates.\n• Internal coordination and communication with team members.", 
-        positionTitle: "Customer Care Officer", 
-        positionOverview: "Our daily tasks include handling booking requests, rescheduling services, addressing customer concerns and inquiries, receiving and documenting complaints, and ensuring that these concerns are properly escalated to the appropriate team. We also arrange bin replacements, guide customers with their service requirements, and provide updates or information related to their bookings and services."
-    },
+    name: "Trafman Solutions", 
+    status: "Active", 
+    entityName: "Trafman Solutions PTY LTD",
+    serviceLocation: "Philippines",
+    evServiceModel: "Staff Extension",
+    program: ["Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Mark Casumpang", 
+    empWorkLocation: "PH - FLT / EBSI",
+    empWorkSetup: "Work From Home",
+    clientLocation: "AUS - Australia",
+    industry: "Logistics", 
+    primaryContact: "Sheldon Smith, Dean Ramsay",
+    primaryEmail: "sheldons@trafman.com.au (TMS), deanr@surveyms.com.au (SMS)",
+    secondaryContact: "-", 
+    secondaryEmail: "-", 
+    website: "https://trafman.com.au/",
+    overview: "Trafman Solutions Pty Ltd (branded Trafman Solutions) is an Australian construction support and traffic management services provider that serves civil infrastructure, construction, and related projects with safety‑focused workforce and equipment solutions. It operates primarily across Victoria, South‑East Queensland, Northern New South Wales, and South Australia.", 
+    tools: "• RapidPlan\n• Google Earth", 
+    purpose: "• Traffic planning and road design software used to create, model, and optimize traffic flow, simulate patterns, and test scenarios for efficiency.\n• Geospatial visualization tool used to understand geographic context, plan routes, analyze infrastructure, and visualize proposed traffic solutions.",    
+    positionTitle: "Traffic Planner", 
+    positionOverview: "Responsible for analyzing, designing, and optimizing traffic flow to ensure safe and efficient movement. Tasks include evaluating road conditions, creating simulations and models, planning intersections and signals, and assessing the impact of proposed changes on the environment."
+},
     { 
-        name: "TeamHealth", 
-        status: "Active", 
-        entityName: "AmeriTeam Services, LLC",
-        serviceLocation: "Philippines",
-        evServiceModel: "Staff Extension",
-        program: ["Software Development"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Mark Casumpang", 
-        empWorkLocation: "PH - FLT / EBSI",
-        empWorkSetup: "Hybrid",
-        clientLocation: "USA - United States of America",
-        industry: "Healthcare", 
-        primaryContact: "Rebecca Myles, Brad Guilford, David Edwards",
-        primaryEmail: "Rebecca_Myles@teamhealth.com, Brad_Guilford@teamhealth.com, david_edwards@teamhealth.com",
-        secondaryContact: "Kim Chenault, Shristi Shrestha, Brian Fisher, Nicholas Karagiozis", 
-        secondaryEmail: "Kim_Chenault@teamhealth.com, Shristi_Shrestha@teamhealth.com, Brian_Fisher@teamhealth.com, Nicholas_Karagiozis@teamhealth.com", 
-        website: "https://www.teamhealth.com/",
-        overview: "TeamHealth Holdings, Inc. (commonly known as TeamHealth) is a large U.S. healthcare services organization that provides outsourced clinical staffing, management, and physician practice services to hospitals, post‑acute care facilities, and other healthcare partners across the United States.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
-    { 
-        name: "Trafman Solutions", 
-        status: "Active", 
-        entityName: "Trafman Solutions PTY LTD",
-        serviceLocation: "Philippines",
-        evServiceModel: "Staff Extension",
-        program: ["Business Support"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Mark Casumpang", 
-        empWorkLocation: "PH - FLT / EBSI",
-        empWorkSetup: "Work From Home",
-        clientLocation: "AUS - Australia",
-        industry: "Logistics", 
-        primaryContact: "Sheldon Smith, Dean Ramsay",
-        primaryEmail: "sheldons@trafman.com.au (TMS), deanr@surveyms.com.au (SMS)",
-        secondaryContact: "-", secondaryEmail: "-", 
-        website: "https://trafman.com.au/",
-        overview: "Trafman Solutions Pty Ltd (branded Trafman Solutions) is an Australian construction support and traffic management services provider that serves civil infrastructure, construction, and related projects with safety‑focused workforce and equipment solutions. It operates primarily across Victoria, South‑East Queensland, Northern New South Wales, and South Australia.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
-    { 
-        name: "Verifact", 
-        status: "Active", 
-        entityName: "Verifact Traffic Control",
-        serviceLocation: "Philippines",
-        evServiceModel: "Staff Extension",
-        program: ["Business Support"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Mark Casumpang", 
-        empWorkLocation: "PH - FLT / EBSI",
-        empWorkSetup: "Work From Home",
-        clientLocation: "AUS - Australia",
-        industry: "Logistics", 
-        primaryContact: "Trevor Leggett",
-        primaryEmail: "tleggett@avadatraffic.com.au",
-        secondaryContact: "-", secondaryEmail: "-", 
-        website: "https://www.verifact.com.au/",
-        overview: "Verifact Group (commonly known simply as Verifact), is an Australian risk management, investigation, and business services firm with operations across Australia. The company has been active since 1990, offering a wide range of services that help organisations manage risk, investigate claims, and support operational safety and compliance",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
-    { 
-        name: "WorldView LTD", 
-        status: "Active", 
-        entityName: "WorldView Services LLC",
-        serviceLocation: "Philippines",
-        evServiceModel: "Managed Services",
-        program: ["Customer Service", "F&A", "Business Support", "Marketing"],
-        businessPartner: "Nelien Tila-on",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Mark Casumpang", 
-        empWorkLocation: "PH - FLT / EBSI",
-        empWorkSetup: "Work From Home",
-        clientLocation: "USA - United States of America",
-        industry: "Healthcare", 
-        primaryContact: "Nicholas Lena, Jennifer Strachan",
-        primaryEmail: "n.lena@livtech.com, jennifer.strachan@livtech.com",
-        secondaryContact: "-", secondaryEmail: "-", 
-        website: "https://www.worldviewltd.com/",
-        overview: "WorldView Ltd is a U.S.‑based technology company that provides document management, workflow automation, and enterprise content solutions designed to help businesses streamline processes, reduce manual tasks, and improve operational efficiency. Their software is used especially by healthcare, home care, and service‑oriented organizations to automate document intake, handling, and data workflows.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
+    name: "Verifact", 
+    status: "Active", 
+    entityName: "Verifact Traffic Control",
+    serviceLocation: "Philippines",
+    evServiceModel: "Staff Extension",
+    program: ["Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Mark Casumpang", 
+    empWorkLocation: "PH - FLT / EBSI",
+    empWorkSetup: "Work From Home",
+    clientLocation: "AUS - Australia",
+    industry: "Logistics", 
+    primaryContact: "Trevor Leggett",
+    primaryEmail: "tleggett@avadatraffic.com.au",
+    secondaryContact: "-", 
+    secondaryEmail: "-", 
+    website: "https://www.verifact.com.au/",
+    overview: "Verifact Group (commonly known simply as Verifact), is an Australian risk management, investigation, and business services firm with operations across Australia. The company has been active since 1990, offering a wide range of services that help organisations manage risk, investigate claims, and support operational safety and compliance",
+    tools: "• RapidPlan\n• Google Earth", 
+    purpose: "• Traffic planning and road design software used to create, model, and optimize traffic flow, simulate patterns, and evaluate intersections.\n• Geospatial visualization tool used to understand geographic context, plan routes, analyze infrastructure, and visualize proposed traffic solutions.", 
+    positionTitle: "Traffic Planner", 
+    positionOverview: "Responsible for analyzing, designing, and optimizing traffic flow to ensure safe and efficient movement. Tasks include evaluating road conditions, creating simulations and models, planning intersections and signals, and assessing the impact of proposed changes on the environment."
+},
+   { 
+    name: "WorldView LTD", 
+    status: "Active", 
+    entityName: "WorldView Services LLC",
+    serviceLocation: "Philippines",
+    evServiceModel: "Managed Services",
+    program: ["Customer Service", "F&A", "Business Support", "Marketing"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Mark Casumpang", 
+    empWorkLocation: "PH - FLT / EBSI",
+    empWorkSetup: "Work From Home",
+    clientLocation: "USA - United States of America",
+    industry: "Healthcare", 
+    primaryContact: "Nicholas Lena, Jennifer Strachan",
+    primaryEmail: "n.lena@livtech.com, jennifer.strachan@livtech.com",
+    secondaryContact: "-", 
+    secondaryEmail: "-", 
+    website: "https://www.worldviewltd.com/",
+    overview: "WorldView Ltd is a U.S.‑based technology company that provides document management, workflow automation, and enterprise content solutions designed to help businesses streamline processes, reduce manual tasks, and improve operational efficiency. Their software is used especially by healthcare, home care, and service‑oriented organizations to automate document intake, handling, and data workflows.",
+    tools: "• Shadow Agent\n• RingCentral\n• Ally Dashboard / Portal\n• Zendesk\n• Stripe\n• Microsoft Outlook & Tools\n• Asana\n• John Hancock Portal\n• Caretime\n• Connected Services\n• Availity\n• Optum Portals\n• Medicaid Portal (Indiana)\n• USPS Zip Code Lookup\n• NPPES NPI Registry", 
+    purpose: "• Used to enter AUX statuses such as available, break, and meal to track work activity throughout the day.\n• Handles incoming calls, maintains call logs, and automatically creates summary notes.\n• Main system for accessing client, caregiver, and operational information quickly.\n• Automatically creates tickets for each call and serves as the main platform for emails.\n• Used to enter client ACH details, track caregiver payments, and monitor successful transactions.\n• Manage emails, collaborate via Teams, track operational data, and update templates.\n• Task management platform used to track and manage adjustment tasks and workflow.\n• Used for submitting and monitoring insurance or claims-related requests.\n• EMR/Billing system used to capture visits, create/scrub claims, and post payments/adjustments.\n• Monitors clearinghouse status to confirm claim transmission and review rejection reports.\n• Provides claim status, denial insight, and resubmission features for commercial plans.\n• Shows claim status, denial details, and payer-specific correction workflows.\n• Displays claim status, denial details, voids, and verify MCO claims or authorization notes.\n• Verifies patient or provider address data to prevent clearinghouse or payer rejections.\n• Validates NPI numbers, taxonomy, and provider authorization to prevent claim denials.", 
+
+    positionTitle: "Client Services Coordinator\nPayment Processing Specialist\nRevenue Billing Cycle Specialist\nDigital Form Builder", 
+    positionOverview: "Involves handling incoming calls from caregivers and clients while managing tickets. Responsibilities include tracking work status, ensuring accurate documentation in Zendesk, and monitoring payments via Stripe.\nResponsible for operational adjustments, claims processing, and ticket coordination. Tasks include assigning requests, tracking in Asana, monitoring claims, handling refunds, and performing computations like overtime.\nManages the end-to-end revenue cycle for patient claims. Key tasks include reviewing clearinghouse status, capturing/submitting charges, addressing denials through appeals, posting payments, and reconciling batches.\nDesigning and managing online/offline forms to capture accurate data. Responsibilities include choosing platforms, setting up logic, testing usability, ensuring security compliance, and integrating submissions into workflows."
+},
     {
         name: "BAS", 
         status: "Active", 
@@ -1536,46 +1575,76 @@ function populateLandingPage() {
             'disp-positionTitle': client.positionTitle,
             'disp-positionOverview': client.positionOverview
         };
-        
+const positionTableBody = document.getElementById('position-table-body');
+
+if (positionTableBody && client) {
+    positionTableBody.innerHTML = ''; 
+    const titles = client.positionTitle.split('\n');
+    const overviews = client.positionOverview.split('\n');
+
+
+titles.forEach((title, index) => {
+    const row = document.createElement('tr');
+    row.style.borderBottom = "1px solid rgba(255,255,255,0.05)";
+    
+    row.innerHTML = `
+        <td style="
+            padding: 15px 12px; 
+            vertical-align: middle; /* Pinaka-importante: Para laging nasa gitna */
+            color: #10b981; 
+            font-weight: bold; 
+            width: 25%;           /* Fix width para pantay-pantay lahat */
+            text-align: left;
+        ">
+            ${title.replace('•', '').trim()}
+        </td>
+        <td style="
+            padding: 15px 12px; 
+            vertical-align: middle; 
+            line-height: 1.6; 
+            color: #f1f5f9;
+        ">
+            ${(overviews[index] || '-').trim()}
+        </td>
+    `;
+    positionTableBody.appendChild(row);
+});
+}      
 
 
 if (client.tools && client.purpose) {
-    const tableBody = document.getElementById('tools-table-body');
-    
-    if (tableBody) {
+    const toolsTableBody = document.getElementById('tools-table-body');
+if (toolsTableBody && client.tools !== "-") {
+    toolsTableBody.innerHTML = '';
+    const toolList = client.tools.split('\n');
+    const purposeList = client.purpose.split('\n');
+
+    toolList.forEach((tool, index) => {
+        const row = document.createElement('tr');
+        row.style.borderBottom = "1px solid rgba(255, 255, 255, 0.05)";
         
-        const toolsArray = client.tools.split('\n');
-        const purposeArray = client.purpose.split('\n');
-
-        tableBody.innerHTML = '';
-
-        toolsArray.forEach((tool, index) => {
-            if (tool.trim() !== "") {
-                const row = document.createElement('tr');
-                row.style.borderBottom = "1px solid rgba(255, 255, 255, 0.05)";
-
-                const toolTd = document.createElement('td');
-                toolTd.style.padding = "12px 10px";
-                toolTd.style.verticalAlign = "top";
-                toolTd.style.color = "#34d399";
-                toolTd.style.fontWeight = "bold";
-                toolTd.textContent = tool.replace('•', '').trim();
-
-                const purposeTd = document.createElement('td');
-                purposeTd.style.padding = "12px 10px";
-                purposeTd.style.verticalAlign = "top";
-                purposeTd.style.color = "#cbd5e1";
-                purposeTd.style.lineHeight = "1.6";
-                
-                let pText = purposeArray[index] ? purposeArray[index].replace('•', '').trim() : "";
-                purposeTd.textContent = pText;
-
-                row.appendChild(toolTd);
-                row.appendChild(purposeTd);
-                tableBody.appendChild(row);
-            }
-        });
-        }
+        row.innerHTML = `
+            <td style="
+                padding: 15px 12px; 
+                vertical-align: middle; 
+                color: #10b981; 
+                font-weight: bold; 
+                width: 30%;
+            ">
+                ${tool.replace('•', '').trim()}
+            </td>
+            <td style="
+                padding: 15px 12px; 
+                vertical-align: middle; 
+                line-height: 1.5; 
+                color: #f1f5f9;
+            ">
+                ${(purposeList[index] || '-').replace('•', '').trim()}
+            </td>
+        `;
+        toolsTableBody.appendChild(row);
+    });
+}
         } else {
         document.getElementById('tools-table-body').innerHTML = '<tr><td colspan="2" style="padding:10px;">No data available</td></tr>';
         }
