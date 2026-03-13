@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Partners</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img/logoicon.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Partners - Directory</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="img/logoicon.jpg">
     <style>
         body {
             margin: 0;
@@ -29,7 +29,7 @@
         h1 {
             font-size: 2.2rem;
             margin: 0;
-            letter-spacing: -1px;
+            transition: color 0.3s;
         }
 
         .subtitle {
@@ -49,7 +49,6 @@
             width: 95%;
             max-width: 1400px;
             padding: 20px 0 80px;
-            align-items: stretch; 
         }
 
         .partner-card {
@@ -59,15 +58,10 @@
             padding: 30px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            box-sizing: border-box;
         }
 
         .partner-card:hover {
             border-color: #10b981;
-            background: rgba(30, 41, 59, 0.7);
             transform: translateY(-5px);
         }
 
@@ -75,9 +69,6 @@
             font-size: 1.4rem;
             margin: 0 0 10px 0;
             color: #ffffff;
-            font-weight: 700;
-            padding-left: 0;
-            border-left: none;
         }
 
         .role-keyword {
@@ -87,11 +78,9 @@
             font-weight: 800;
             text-transform: uppercase;
             font-size: 0.65rem;
-            letter-spacing: 1px;
             padding: 4px 10px;
             border-radius: 4px;
             margin-bottom: 15px;
-            width: fit-content;
             border: 1px solid rgba(16, 185, 129, 0.2);
         }
 
@@ -112,224 +101,169 @@
         .company-list li::before {
             content: "•";
             color: #10b981;
+            margin-right: 10px;
             font-weight: bold;
-            display: inline-block;
-            width: 1.2em;
-            font-size: 1.2rem;
         }
 
-        .home-edge-btn {
-            position: absolute;
-            top: 15px;
-            left: 15px;
+   
+        .action-buttons {
+            position: fixed;
+            top: 20px;
+            left: 20px;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            color: #f1f5f9;
-            background: rgba(30, 41, 59, 0.6);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            flex-direction: column;
+            gap: 12px;
             z-index: 1000;
         }
 
-        .home-edge-btn:hover {
-            background: rgba(16, 185, 129, 0.2);
-            border-color: #10b981;
-            color: #10b981;
-            transform: translateY(-2px);
+        .side-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            color: #f1f5f9;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
         }
 
-        @media (max-width: 768px) {
-            .directory-grid {
-                grid-template-columns: 1fr;
-            }
-            .home-edge-btn {
-                top: 10px;
-                left: 10px;
-                width: 45px;
-                height: 45px;
-            }
+        .side-btn:hover {
+            border-color: #10b981;
+            color: #10b981;
+            transform: scale(1.05);
+        }
+
+  
+        .mode-inactive .side-btn#toggleViewBtn {
+            background: #ef4444;
+            color: white;
+            border-color: #ef4444;
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+        }
+        
+        .mode-inactive .role-keyword {
+            color: #ef4444;
+            background: rgba(239, 68, 68, 0.1);
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+
+        .mode-inactive .company-list li::before {
+            color: #ef4444;
         }
     </style>
 </head>
-<body>
+<body id="pageBody">
 
-    <a href="index.html" class="home-edge-btn" title="Back to Search">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-        </svg>
-    </a>
+    <div class="action-buttons">
+        <a href="index.html" class="side-btn" title="Back to Search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        
+        <button id="toggleViewBtn" class="side-btn" title="Switch View" onclick="toggleMode()">
+            <span id="btnIcon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <polyline points="17 11 19 13 23 9"></polyline>
+                </svg>
+            </span>
+        </button>
+    </div>
 
     <div class="header-section">
-        <span class="subtitle">Eastvantage Operations</span>
-        <h1>Business Partners Directory</h1>
+        <span class="subtitle" id="subtitleText">Eastvantage Operations</span>
+        <h1 id="directoryTitle">Business Partners Directory</h1>
     </div>
 
-    <div class="directory-grid">
-        <div class="partner-card">
-            <h2 class="partner-name">Nelien Tila-on</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>Abacus Service Corporation</li>
-                <li>Bundled Management</li>
-                <li>CATO</li>
-                <li>Cleveland Kitchen</li>
-                <li>El Connect</li>
-                <li>Henry Jackson Foundation</li>
-                <li>Online Therapy Centre</li>
-                <li>Speedie Waste</li>
-                <li>TeamHealth</li>
-                <li>Trafman Solutions</li>
-                <li>Verifact</li>
-                <li>WorldView LTD</li>
-            </ul>
+    <div class="directory-grid" id="partnerGrid">
         </div>
 
-        <div class="partner-card">
-            <h2 class="partner-name">Mohanraj MJ</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>ACMB</li>
-                <li>DE VETTER</li>
-                <li>Ethan Group</li>
-                <li>FBMB</li>
-                <li>Finexpert</li>
-                <li>GGR Recycling</li>
-                <li>GKW</li>
-                <li>Paradigm</li>
-                <li>Polytra</li>
-                <li>Spot Buy Center</li>
-                <li>Terra Construct</li>
-            </ul>
-        </div>
+    <script src="script.js"></script>
 
-        <div class="partner-card">
-            <h2 class="partner-name">Jonas Soria</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>Airthings</li>
-                <li>Earth Optics</li>
-                <li>Halcyon</li>
-                <li>Optimy</li>
-                <li>Pact Group</li>
-                <li>Promosuns</li>
-                <li>TYN - Tyneso</li>
-                <li>River Cruise</li>
-            </ul>
-        </div>
+    <script>
+        let isInactiveMode = false;
 
-        <div class="partner-card">
-            <h2 class="partner-name">Ana Martela Dujunco</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>CloudTech24</li>
-                <li>Ethan Group</li>
-                <li>AED Philippines</li>
-                <li>Arabian Establishment</li>
-                <li>Maze Map</li>
-                <li>Network Intelligence</li>
-                <li>Besix</li>
-                <li>Bigo</li>
-                <li>Dangerous Goods Network</li>
-                <li>Deliberate Capital</li>
-                <li>Modibodi</li>
-                <li>Razor Group</li>
-                <li>Techcorr</li>
-            </ul>
-        </div>
+        const partnersList = [
+            "Nelien Tila-on", "Mohanraj MJ", "Jonas Soria", 
+            "Ana Martela Dujunco", "Glenda Felio", "Vishnu Prakash Padmanabhan",
+            "Kumareshan D", "Adrian Jay Gomez", "Hajar EL ALAOUI",
+            "Abdelhak Bouroubaya", "Anirudha Bhimrao Mahajan", 
+            "Sandy Guevarra", "Yves Vanderlinden"
+        ];
 
-        <div class="partner-card">
-            <h2 class="partner-name">Glenda Felio</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>Ace Displays</li>
-                <li>Expleo Solutions Limited</li>
-                <li>FEI Systems</li>
-                <li>Riverstreamz</li>
-                <li>Solutions30</li>
-                <li>Workforge</li>
-            </ul>
-        </div>
+        const activeIcon = `
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>`;
+        
+        const inactiveIcon = `
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <line x1="18" y1="8" x2="22" y2="12"></line>
+                <line x1="22" y1="8" x2="18" y2="12"></line>
+            </svg>`;
 
-        <div class="partner-card">
-            <h2 class="partner-name">Vishnu Prakash Padmanabhan</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>Bramble</li>
-                <li>FORMS EXPRESS</li>
-                <li>GK Software</li>
-                <li>Lucrotec</li>
-                <li>Paradigm (SD)</li>
-                <li>Spot Buy Center (Global)</li>
-            </ul>
-        </div>
+        function renderDirectory() {
+            const grid = document.getElementById('partnerGrid');
+            const title = document.getElementById('directoryTitle');
+            const body = document.getElementById('pageBody');
+            const iconSpan = document.getElementById('btnIcon');
 
-        <div class="partner-card">
-            <h2 class="partner-name">Kumareshan D</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>DocuSketch</li>
-                <li>SEG- Society of Exploration Geophysicists</li>
-                <li>Uniquest</li>
-            </ul>
-        </div>
+            grid.innerHTML = '';
 
-        <div class="partner-card">
-            <h2 class="partner-name">Adrian Jay Gomez</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>Hobbyking</li>
-                <li>Kindred Bravely</li>
-                <li>Magic</li>
-            </ul>
-        </div>
+            if (isInactiveMode) {
+                body.classList.add('mode-inactive');
+                title.innerText = "Inactive Accounts Directory";
+                title.style.color = "#ef4444";
+                iconSpan.innerHTML = inactiveIcon;
+            } else {
+                body.classList.remove('mode-inactive');
+                title.innerText = "Business Partners Directory";
+                title.style.color = "#ffffff";
+                iconSpan.innerHTML = activeIcon;
+            }
 
-        <div class="partner-card">
-            <h2 class="partner-name">Hajar EL ALAOUI</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>Prompto</li>
-                <li>Unit T</li>
-            </ul>
-        </div>
+            partnersList.forEach(partnerName => {
+                const filteredClients = allClients.filter(client => 
+                    client.businessPartner === partnerName && 
+                    (isInactiveMode ? client.status === "Inactive" : client.status === "Active")
+                );
 
-        <div class="partner-card">
-            <h2 class="partner-name">Abdelhak Bouroubaya</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>BAS</li>
-            </ul>
-        </div>
+                if (filteredClients.length > 0) {
+                    const card = document.createElement('div');
+                    card.className = 'partner-card';
+                    
+                    const clientListHtml = filteredClients.map(c => `<li>${c.name}</li>`).join('');
 
-        <div class="partner-card">
-            <h2 class="partner-name">Anirudha Bhimrao Mahajan</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>Altice</li>
-            </ul>
-        </div>
+                    card.innerHTML = `
+                        <h2 class="partner-name">${partnerName}</h2>
+                        <div class="role-keyword">Business Partner</div>
+                        <ul class="company-list">
+                            ${clientListHtml}
+                        </ul>
+                    `;
+                    grid.appendChild(card);
+                }
+            });
+        }
 
-        <div class="partner-card">
-            <h2 class="partner-name">Sandy Guevarra</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>Uniquest (PH)</li>
-            </ul>
-        </div>
+        function toggleMode() {
+            isInactiveMode = !isInactiveMode;
+            renderDirectory();
+        }
 
-        <div class="partner-card">
-            <h2 class="partner-name">Yves Vanderlinden</h2>
-            <div class="role-keyword">Business Partner</div>
-            <ul class="company-list">
-                <li>ENECO</li>
-            </ul>
-        </div>
-    </div>
-
+        document.addEventListener('DOMContentLoaded', renderDirectory);
+    </script>
 </body>
 </html>
