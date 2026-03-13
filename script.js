@@ -301,6 +301,106 @@ const allClients = [
     positionTitle: "Client Services Coordinator\nPayment Processing Specialist\nRevenue Billing Cycle Specialist\nDigital Form Builder", 
     positionOverview: "Involves handling incoming calls from caregivers and clients while managing tickets. Responsibilities include tracking work status, ensuring accurate documentation in Zendesk, and monitoring payments via Stripe.\nResponsible for operational adjustments, claims processing, and ticket coordination. Tasks include assigning requests, tracking in Asana, monitoring claims, handling refunds, and performing computations like overtime.\nManages the end-to-end revenue cycle for patient claims. Key tasks include reviewing clearinghouse status, capturing/submitting charges, addressing denials through appeals, posting payments, and reconciling batches.\nDesigning and managing online/offline forms to capture accurate data. Responsibilities include choosing platforms, setting up logic, testing usability, ensuring security compliance, and integrating submissions into workflows."
 },
+{ 
+    name: "Elbaite", 
+    status: "Inactive", 
+    entityName: "Elbaite Pty Ltd",
+    serviceLocation: "Philippines",
+    evServiceModel: "Managed Services",
+    program: ["Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Koen Verbergt", 
+    empWorkLocation: "NA",
+    empWorkSetup: "NA",
+    clientLocation: "NA",
+    industry: "Marketing and Advertising", 
+    primaryContact: "NA",
+    primaryEmail: "NA",
+    secondaryContact: "NA", 
+    secondaryEmail: "NA", 
+    website: "NA",
+    overview: "NA",
+    tools: "NA", 
+    purpose: "NA", 
+    positionTitle: "NA", 
+    positionOverview: "NA"
+},
+{ 
+    name: "Integrity Traffic", 
+    status: "Inactive", 
+    entityName: "Integrity Traffic, LLC",
+    serviceLocation: "Philippines",
+    evServiceModel: "Staff Extension",
+    program: ["Business Support"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "NA", 
+    empWorkLocation: "NA",
+    empWorkSetup: "NA",
+    clientLocation: "NA",
+    industry: "NA", 
+    primaryContact: "NA",
+    primaryEmail: "NA",
+    secondaryContact: "NA", 
+    secondaryEmail: "NA", 
+    website: "NA",
+    overview: "NA",
+    tools: "NA", 
+    purpose: "NA", 
+    positionTitle: "NA", 
+    positionOverview: "NA"
+},
+{ 
+    name: "InvestEd", 
+    status: "Inactive", 
+    entityName: "Educ4All Lending Inc.",
+    serviceLocation: "NA",
+    evServiceModel: "Managed Services",
+    program: ["NA"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "NA", 
+    empWorkLocation: "NA",
+    empWorkSetup: "NA",
+    clientLocation: "NA",
+    industry: "NA", 
+    primaryContact: "NA",
+    primaryEmail: "NA",
+    secondaryContact: "NA", 
+    secondaryEmail: "NA", 
+    website: "NA",
+    overview: "NA",
+    tools: "NA", 
+    purpose: "NA", 
+    positionTitle: "NA", 
+    positionOverview: "NA"
+},
+{ 
+    name: "Toyota Tsusho", 
+    status: "Inactive", 
+    entityName: "TOYOTA TSUSHO SYSTEMS (THAILAND)",
+    serviceLocation: "Philippines",
+    evServiceModel: "Managed Services",
+    program: ["Customer Service"],
+    businessPartner: "Nelien Tila-on",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Rachna Gaba", 
+    empWorkLocation: "PH - SFS / One EV",
+    empWorkSetup: "Hybrid",
+    clientLocation: "THA - Thailand",
+    industry: "IT Services", 
+    primaryContact: "Mie Uesaka, Pirun Namsanaoh, Daisuke Asai",
+    primaryEmail: "Mie.Uesaka@ttsystems.com, Pirun.Na@ttsystems.com, Daisuke.Asai@ttsystems.com",
+    secondaryContact: "NA", 
+    secondaryEmail: "NA", 
+    website: "https://www.ttsystems.com/",
+    overview: "NA",
+    tools: "NA", 
+    purpose: "NA", 
+    positionTitle: "NA", 
+    positionOverview: "NA"
+},
     {
         name: "BAS", 
         status: "Active", 
@@ -1871,7 +1971,6 @@ function performSearch() {
     const userData = searchInput.value.trim().toLowerCase();
     suggestionBox.innerHTML = "";
 
-    
     const topButtonsDiv = document.createElement('div');
     topButtonsDiv.style.width = "100%";
     topButtonsDiv.style.display = "flex";
@@ -1879,12 +1978,10 @@ function performSearch() {
     topButtonsDiv.style.marginBottom = "15px";
     topButtonsDiv.style.justifyContent = "center";
 
-
     const bpBtn = document.createElement('button');
     bpBtn.innerText = "Business Partners";
     bpBtn.onclick = () => { smoothNavigate('business.html'); };
 
-    
     topButtonsDiv.appendChild(bpBtn);
     suggestionBox.appendChild(topButtonsDiv); 
 
@@ -1892,13 +1989,19 @@ function performSearch() {
     if (userData) {
         filteredResults = allClients.filter(client => {
             const nameMatch = client.name.toLowerCase().includes(userData);
+            
+    
             const programMatch = Array.isArray(client.program) 
                 ? client.program.some(p => p.toLowerCase().includes(userData))
                 : client.program.toLowerCase().includes(userData);
-            return nameMatch || programMatch;
+            
+            const statusMatch = client.status && client.status.toLowerCase() === userData;
+
+            return nameMatch || programMatch || statusMatch;
         });
     }
 
+    
     if (userData && filteredResults.length > 0) {
         modal.style.display = "flex";
         modal.querySelector("h2").innerText = `Results for "${userData}"`;
@@ -1908,7 +2011,9 @@ function performSearch() {
         filteredResults.forEach(client => {
             createClientButton(client, suggestionBox);
         });
-    } else if (userData && filteredResults.length === 0) {
+    } 
+
+    else if (userData && filteredResults.length === 0) {
         modal.style.display = "flex";
         modal.querySelector("h2").innerText = "No Match Found";
         modal.querySelector("h2").style.color = "#ef4444";
@@ -1917,7 +2022,8 @@ function performSearch() {
         allClients.forEach(client => {
             createClientButton(client, suggestionBox);
         });
-    } else {
+    } 
+    else {
         modal.style.display = "flex";
         modal.querySelector("h2").innerText = "Suggestions";
         modal.querySelector("h2").style.color = "#f1f5f9";
@@ -1931,15 +2037,29 @@ function createClientButton(client, container) {
     const btn = document.createElement('button');
     const programDisplay = Array.isArray(client.program) ? client.program.join(", ") : client.program;
     
-    btn.innerHTML = `<strong>${client.name}</strong><br><small style="opacity:0.7; font-size: 0.8rem;">${programDisplay}</small>`;
+    
+    const isInactive = client.status && client.status.toLowerCase() === 'inactive';
+
+    
+    const displayName = isInactive ? `${client.name} (Inactive)` : client.name;
+
+    btn.innerHTML = `<strong>${displayName}</strong><br><small style="opacity:0.8; font-size: 0.8rem;">${programDisplay}</small>`;
     btn.className = "suggestion-btn";
     btn.style.width = "100%";
     btn.style.textAlign = "left";
     btn.style.marginBottom = "8px";
     
+    
+    if (isInactive) {
+        btn.style.backgroundColor = "#ef4444"; 
+        btn.style.color = "white";             
+        btn.style.borderColor = "#b91c1c";     
+    }
+
     btn.onclick = () => {
         smoothNavigate(`clients.html?name=${encodeURIComponent(client.name)}`);
     };
+    
     container.appendChild(btn);
 }
 
