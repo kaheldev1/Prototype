@@ -3135,7 +3135,7 @@ function checkLogin() {
     loginBox.classList.remove('shake');
 
     if (user === "" || pass === "") {
-        errorMsg.innerHTML = "<strong>Missing Credentials:</strong> Please enter your username and password.";
+        errorMsg.innerHTML = "<strong>Invalid Credentials:</strong> Please enter your username and password.";
         errorMsg.style.display = 'block';
         
         if (user === "") userInput.classList.add('input-error');
