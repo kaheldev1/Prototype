@@ -474,7 +474,7 @@ const allClients = [
         businessPartner: "Adrian Jay Gomez",
         accountDirector: "Joeri Timp",
         accountExecutive: "Joeri Timp", 
-        empWorkLocation: "Work From Home",
+        empWorkLocation: "PH - FLT / EBSI",
         empWorkSetup: "Work From Home",
         clientLocation: "USA - United States of America",
         industry: "Virtual Assistant Services", 
@@ -501,33 +501,16 @@ const allClients = [
         industry: "Technology - IT Services", 
         primaryContact: "Craig Bird, Rob Brewer, Dan Kent",
         primaryEmail: "craig@cloudtech24.com, rbrewer@cloudtech24.com",
-        secondaryContact: "-", secondaryEmail: "-", 
+        secondaryContact: "-", 
+        secondaryEmail: "-", 
         website: "https://cloudtech24.com/",
-        overview: "An award-winning Managed Service Provider (MSP) delivering IT support and cybersecurity services.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        overview: "CloudTech24 is a UK‑based managed technology services provider that delivers 24/7 IT support and cybersecurity solutions to businesses globally. The company specializes in managed IT services, cyber threat monitoring and response, cloud support (including Microsoft 365 and Google Workspace), and incident response, helping organizations secure and manage their technology infrastructure.",
+        tools: "• Halo\n• Ninja RMM\n• Addigy", 
+        purpose: "• Ticketing tool\n• Remote access tools", 
+        positionTitle: "• IT Support / Helpdesk Engineer\n• IT Security Analyst\n• IT Analyst", 
+        positionOverview: ""
     },
-    {
-        name: "Ethan Group", 
-        status: "Active", 
-        entityName: "ETHAN GROUP PTY LTD",
-        serviceLocation: "Philippines/India",
-        evServiceModel: "Staff Extension",
-        program: ["IT Operations", "Business Support"],
-        businessPartner: "Ana Martela Dujunco",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Mark Casumpang", 
-        empWorkLocation: "PH - FLT / EBSI",
-        empWorkSetup: "Hybrid",
-        clientLocation: "AUS - Australia",
-        industry: "Technology - IT Services", 
-        primaryContact: "Gail Collins, Mike Parry",
-        primaryEmail: "Gail.Collins@ethan.com.au, mike.parry@ethan.com.au",
-        secondaryContact: "Rahoul Das", secondaryEmail: "Rahoul.das@ethan.com.au", 
-        website: "https://ethan.global/",
-        overview: "Australian-owned IT services company providing technology solutions and infrastructure management.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
-    {
+   {
         name: "AED Philippines", 
         status: "Active", 
         entityName: "AED Medical Supplies",
@@ -543,10 +526,14 @@ const allClients = [
         industry: "Healthcare", 
         primaryContact: "Jasper van den Borne",
         primaryEmail: "jasper@aedphilippines.com",
-        secondaryContact: "-", secondaryEmail: "-", 
+        secondaryContact: "-", 
+        secondaryEmail: "-", 
         website: "https://aedphilippines.com/",
         overview: "A supplier of medical equipment and emergency response products like Automated External Defibrillators (AED) in the Philippines.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        tools: "Monday.com", 
+        purpose: "Task management", 
+        positionTitle: "Executive Sales Assistant", 
+        positionOverview: "-"
     },
     {
         name: "Arabian Establishment", 
@@ -564,10 +551,14 @@ const allClients = [
         industry: "Logistics", 
         primaryContact: "Hamed Silim",
         primaryEmail: "hamed@aetshipping.com",
-        secondaryContact: "Hope Javellana", secondaryEmail: "hope@aetshipping.com", 
+        secondaryContact: "Hope Javellana", 
+        secondaryEmail: "hope@aetshipping.com", 
         website: "https://aetshipping.com/",
         overview: "One of the oldest and most prominent shipping and trading companies in Saudi Arabia, specializing in logistics and marine services.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        tools: "SAP S/4HANA", 
+        purpose: "Inventory and financial management", 
+        positionTitle: "Customer Service", 
+        positionOverview: "-"
     },
     {
         name: "Espresso Displays", 
@@ -606,12 +597,16 @@ const allClients = [
         industry: "Technology - Software", 
         primaryContact: "Benjamin Malchus",
         primaryEmail: "benjamin.malchus@mazemap.com",
-        secondaryContact: "Egon Loset", secondaryEmail: "egon.loset@mazemap.com", 
+        secondaryContact: "Egon Loset", 
+        secondaryEmail: "egon.loset@mazemap.com", 
         website: "https://www.mazemap.com/",
         overview: "A digital wayfinding platform for large indoor spaces like universities and hospitals, providing seamless indoor-outdoor navigation.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        tools: "JIRA", 
+        purpose: "CRM tool", 
+        positionTitle: "Customer Success Manager", 
+        positionOverview: "-"
     },
-    {
+   {
         name: "Network Intelligence", 
         status: "Active", 
         entityName: "Network Intelligence Private Limited",
@@ -627,10 +622,14 @@ const allClients = [
         industry: "Technology - Cybersecurity", 
         primaryContact: "Vivek Shivram",
         primaryEmail: "vivek.shivram@networkintelligence.ai",
-        secondaryContact: "-", secondaryEmail: "-", 
+        secondaryContact: "-", 
+        secondaryEmail: "-", 
         website: "https://www.niiconsulting.com/",
         overview: "A global cybersecurity services provider offering assessment, advisory, and managed security services.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        tools: "Hubspot", 
+        purpose: "CRM, lead, marketing, sales", 
+        positionTitle: "Sales Account Executive", 
+        positionOverview: "-"
     },
     { 
         name: "EC-EXPERTS", 
@@ -842,7 +841,7 @@ const allClients = [
         businessPartner: "Anirudha Bhimrao Mahajan",
         accountDirector: "Kamal Asarpota",
         accountExecutive: "Joeri (+ Koen)", 
-        empWorkLocation: "India",
+        empWorkLocation: "India, Philippines",
         empWorkSetup: "Work From Office",
         clientLocation: "USA - United States of America (the)",
         industry: "Telecommunications", 
@@ -870,10 +869,14 @@ const allClients = [
         industry: "Marketing", 
         primaryContact: "Dale Bryson",
         primaryEmail: "dbryson@acedisplays.com",
-        secondaryContact: "-", secondaryEmail: "-", 
+        secondaryContact: "-", 
+        secondaryEmail: "-", 
         website: "https://www.acedisplays.com/",
-        overview: "Ace Exhibits is a premier provider of trade show displays and exhibits, offering high-quality display hardware and custom-printed graphics.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        overview: "Ace Displays is a U.S.-based company that provides custom trade show and event display solutions. They specialize in high-quality banner stands, backdrops, and modular booth displays, focusing on efficient order-to-production workflows for exhibitions and promotional events.",
+        tools: "• Shopify\n• Fulfil.io\n• tFlow\n• Google Sheets\n• Asana\n• HubSpot\n• Slack\n• Remote Printing", 
+        purpose: "• E-commerce platform for order retrieval and financial transactions\n• ERP for inventory management and production tracking\n• Artwork approval workflow management\n• Data bridge for order translation and precise calculations\n• Project management for tracking order edits and adjustments\n• CRM for aligning stakeholder info and client communication\n• Communication hub for order alerts and real-time updates\n• Triggering physical paperwork at production facilities", 
+        positionTitle: "Operations Workflow Associate", 
+        positionOverview: "Critical link between client sales and production; ensures seamless data flow across platforms to facilitate timely production and shipping through high-level precision in systems synchronization."
     },
     {
         name: "Expleo Solutions Limited", 
@@ -894,10 +897,13 @@ const allClients = [
         secondaryContact: "Anupranjan Sabat", 
         secondaryEmail: "Anupranjan.Sabat@expleogroup.com", 
         website: "https://expleo.com/global/en/",
-        overview: "Expleo is a global engineering, technology, and consulting service provider that partners with organizations to guide them through digital transformation.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        overview: "Expleo is a global engineering, technology, and consulting service provider that partners with organizations to guide them through digital transformation, specifically in core banking migration and enterprise software implementation.",
+        tools: "• Jira\n• Confluence\n• SAP S/4HANA / Oracle NetSuite\n• Temenos / Finacle\n• HP ALM (Quality Center)\n• Power BI\n• MS Visio", 
+        purpose: "• Managing Agile workflow, tracking requirements, and project progress\n• Central knowledge base for Business Analysis and Requirements Gathering\n• ERP platforms for Solution Design and System Configuration\n• Core Banking Systems for migration strategy and technical implementation\n• Test Management for functional, automation, and performance testing\n• Data visualization and stakeholder project reporting\n• Visual diagrams for business processes and system architectures", 
+        positionTitle: "Functional Consultant / SME", 
+        positionOverview: "Serves as the primary bridge between business requirements and technical implementation; acts as the Subject Matter Expert (SME) to drive end-to-end strategy for core banking migration projects while ensuring software configuration meets business goals."
     },
-    {
+   {
         name: "FEI Systems", 
         status: "Active", 
         entityName: "FEI.COM, Inc. dba FEI Systems",
@@ -916,10 +922,13 @@ const allClients = [
         secondaryContact: "Vaishali Devani", 
         secondaryEmail: "vaishali.devani@feisystems.com", 
         website: "https://feisystems.com/",
-        overview: "FEI Systems is a leading provider of health information technology solutions, specializing in systems for federal, state, and local government agencies.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        overview: "FEI Systems is a leading provider of health IT solutions for government agencies, focusing on transitioning toward modern cloud-native architectures and enterprise-scale data ecosystems.",
+        tools: "• Data: Python, SQL, AWS (S3, Lambda, Glue, EMR, Athena, Kinesis), Snowflake, Aurora Postgres, Power BI\n• Software: C# / .NET 8, Angular, AWS Serverless, Minimal API, DDD, Microservices, TDD, AI Tools (Amazon Q/Copilot)", 
+        purpose: "• Data Eng: ETL processes, big data analytics, cloud data warehousing, and enterprise reporting\n• Software Dev: Building enterprise-grade Microsoft applications, dynamic UIs, and cloud-native hosting\n• Automation: IaC, Step Functions, and CI/CD for seamless deployment", 
+        positionTitle: "• Data Engineer\n• Software Developer", 
+        positionOverview: " Data Engineer: High-level technical leader architecting enterprise-scale data ecosystems, driving cloud-native transitions, and ensuring data governance across Python, SQL, and AWS.\n Software Engineer: Expert role focused on .NET enterprise applications, leveraging Microservices, DDD, and TDD to build scalable solutions using modern AWS technologies."
     },
-    {
+   {
         name: "Riverstreamz", 
         status: "Active", 
         entityName: "Riverstreamz",
@@ -935,10 +944,14 @@ const allClients = [
         industry: "Virtual Assistant", 
         primaryContact: "Richard Sootkoos",
         primaryEmail: "rich@riverstreamz.com",
-        secondaryContact: "-", secondaryEmail: "-", 
+        secondaryContact: "-", 
+        secondaryEmail: "-", 
         website: "https://riverstreamz.com/",
-        overview: "Riverstreamz provides specialized virtual assistant and professional support services tailored for US-based businesses.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        overview: "Riverstreamz provides specialized virtual assistant and professional support services, focusing on financial management and large-scale staffing operations for US-based projects.",
+        tools: "• QuickBooks Online\n• Google Sheets / MS Excel\n• SignNow\n• Zoom / Phone / Email\n• Database Entry Systems", 
+        purpose: "• Financial recording, expense classification, and AP/AR management\n• Maintaining high-volume prospect and employment databases\n• Digital signing of employment and off-boarding packets\n• Applicant inquiries and recruitment outreach\n• Managing demographic data for large-scale staffing projects", 
+        positionTitle: "Bookkeeper", 
+        positionOverview: "Combines financial record-keeping with high-volume administrative coordination; manages the lifecycle of over 500 employees from recruitment to off-boarding while supporting the Comptroller with payroll and billing."
     },
     {
         name: "Solutions30", 
@@ -956,10 +969,14 @@ const allClients = [
         industry: "Telecommunications", 
         primaryContact: "Sacha Vandewalle",
         primaryEmail: "sacha.vandewalle@solutions30.com",
-        secondaryContact: "-", secondaryEmail: "-", 
+        secondaryContact: "-", 
+        secondaryEmail: "-", 
         website: "https://www.solutions30.com/",
-        overview: "Solutions30 is the European leader in solutions for new technologies, providing support for digital transformation in the telecom and energy sectors.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        overview: "Solutions30 is the European leader in solutions for new technologies, providing support for digital transformation in the telecom and energy sectors through scalable software architecture and advanced data engineering.",
+        tools: "Python (FastAPI/Flask/Django)\nReactJS\nPostgreSQL / MySQL / MongoDB\nAWS Ecosystem\nDocker / Kubernetes\nSelenium / Robot Framework\nJira / Confluence\nGit / CI-CD Pipelines\nParquet / JSON / XML / CSV", 
+        purpose: "Backend APIs, microservices, and ETL workflows\nModular frontend UI and state management\nRelational and non-relational data modeling\nCloud infrastructure and serverless compute\nContainerization and orchestration\nTest automation and system validation\nAgile project tracking and documentation\nVersion control and automated deployments\nData ingestion and conversion in ETL pipelines", 
+        positionTitle: "Solutions Architect\nSoftware Developer\nData Engineer\nQA Engineer", 
+        positionOverview: "Solutions Architect: Translates business requirements into scalable blueprints using ReactJS and Python.\nSoftware Developer: Builds enterprise web apps ensuring secure and performant frontend/backend logic.\nQA Engineer: Quality gatekeeper executing automated testing to satisfy acceptance criteria.\nData Engineer: Handles ETL ingestion and transformation using diverse data formats."
     },
     {
         name: "Workforge", 
@@ -980,8 +997,11 @@ const allClients = [
         secondaryContact: "Lily Gibbens, Tanner Miller, Alex Cihak", 
         secondaryEmail: "lily.gibbens@workforge.com, tanner.miller@workforge.com, alex.cihak@workforge.com", 
         website: "https://workforge.com/",
-        overview: "Workforge specializes in workforce development and training solutions, partnering with education groups to enhance career readiness.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
+        overview: "Workforge specializes in workforce development and training solutions, providing high-impact e-learning, animation, and LMS administration to enhance career readiness and technical training.",
+        tools: "Seertech / Litmos LMS\nArticulate 360 / Storyline\nAdobe After Effects\nAdobe Premiere Pro\nAdobe Illustrator / Photoshop\nMicrosoft Excel (Advanced)\nPowerBI\nAsana / Jira\nAzure Cognitive Services", 
+        purpose: "LMS for portal configuration, user management, and eLearning deployment\nAuthoring tools for interactive modules and gamified content\nCreating high-impact animations and motion graphics\nVideo editing and multimedia-rich learning presentations\nDeveloping custom graphics and brand-aligned visual assets\nData validation, audits, and complex organization management\nData visualization and reporting on learner progress\nProject management and tracking sprint cycles\nAI-driven technical features integration in learning workflows", 
+        positionTitle: "LMS Administrator\nGraphic Designer\nLearning Experience Designer (LXD)\nGlobal Operations Lead", 
+        positionOverview: "LMS Admin: Manages platform configuration and technical user support.\nGraphic Designer: Develops technical visual content and motion graphics.\nLXD: Combines instructional theory with design for high-impact e-learning.\nGlobal Ops Lead: Strategic bridge overseeing offshore teams and process optimization."
     },
     { 
         name: "Ampcus Cyber", 
@@ -1471,13 +1491,13 @@ const allClients = [
     secondaryContact: "-", 
     secondaryEmail: "-", 
     website: "https://www.airthings.com/",
-    overview: "Airthings is a global tech company that produces indoor air quality monitors and radon detectors for consumers and businesses.",
-    tools: "• Notion\n• JIRA", 
-    purpose: "• CRM", 
-    positionTitle: "• Customer Success Agents\n• Customer Support", 
-    positionOverview: "-"
+    overview: "Airthings is a global technology company that develops indoor air quality monitoring solutions, including radon detectors and smart air quality monitors for homes, workplaces, and public buildings. Founded in 2008 and headquartered in Oslo, Norway, the company focuses on helping people monitor and improve the air they breathe through accessible, data-driven sensor technology and connected devices.",
+    tools: "Notion & JIRA", 
+    purpose: "CRM", 
+    positionTitle: "Customer Success Agents", 
+    positionOverview: "Customer Support"
 },
-    {
+   {
     name: "Earth Optics", 
     status: "Active", 
     entityName: "Earth Optics",
@@ -1496,11 +1516,11 @@ const allClients = [
     secondaryContact: "Bea Arendt, Kelly Thomson", 
     secondaryEmail: "bea.arendt@earthoptics.com, kelly.thomson@earthoptics.com", 
     website: "https://earthoptics.com/",
-    overview: "EarthOptics uses machine learning and ground-penetrating radar to create precise soil maps, helping farmers improve carbon sequestration.",
-    tools: "• Jupyter Notebook", 
-    purpose: "• Digital lab notebook", 
-    positionTitle: "• Quality Specialist", 
-    positionOverview: " Qualit Check and Data Analysis Support"
+    overview: "EarthOptics uses machine learning and ground-penetrating radar to create precise soil maps, helping farmers improve carbon sequestration. The company focuses on soil health and carbon measurement through advanced sensor technology.",
+    tools: "• Jupyter Notebook\n• Microsoft Office Tools\n• Airtable\n• Soil Collector Manager (API)\n• Google Script\n• Monday.com\n• Google Drive\n• Admin Soil Collector Portal\n• Gmail\n• Slack\n• FEDEX/UPS Site", 
+    purpose: "• Digital lab notebook\n• Document creation, spreadsheets, and general office productivity\n• Cloud-based database and project management\n• Manage and interact with soil collection data programmatically\n• Automates tasks within Google Workspace apps\n• Task and project management and workflow automation\n• Cloud storage for storing and collaborating on files\n• Managing soil collection operations and reporting\n• Email platform for communication\n• Team communication and collaboration\n• Shipping management and logistics", 
+    positionTitle: "Quality Specialist", 
+    positionOverview: "Quality Check and Data Analysis Support"
 },
    {
     name: "Halcyon", 
@@ -2128,28 +2148,31 @@ const allClients = [
         overview: "A Belgium-based accounting firm specializing in financial services and bookkeeping.",
         tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
     },
-    {
-        name: "Ethan Group", 
-        status: "Active", 
-        entityName: "ETHAN GROUP PTY LTD",
-        serviceLocation: "Philippines",
-        evServiceModel: "Staff Extension",
-        program: ["F&A", "IT Operations", "Business Support"],
-        businessPartner: "Mohanraj MJ",
-        accountDirector: "Sipin Sidharthan",
-        accountExecutive: "Mark Casumpang", 
-        empWorkLocation: "",
-        empWorkSetup: "Hybrid",
-        clientLocation: "AUS - Australia",
-        industry: "Technology - IT Services", 
-        primaryContact: "Gail Collins, Mike Parry, Dianne Cordin",
-        primaryEmail: "Gail.Collins@ethan.com.au, mike.parry@ethan.com.au, dianne.cordin@ethan.com.au",
-        secondaryContact: "Rahoul Das, Craig Noonan", 
-        secondaryEmail: "Rahoul.das@ethan.com.au, Craig.noonan@ethan.com.au", 
-        website: "https://ethan.global/",
-        overview: "Australian-owned IT services company providing comprehensive technology and financial support solutions.",
-        tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
-    },
+{
+    name: "Ethan Group", 
+    status: "Active", 
+    entityName: "ETHAN GROUP PTY LTD",
+    serviceLocation: "Philippines",
+    evServiceModel: "Staff Extension",
+    program: ["F&A", "IT Operations", "Business Support"],
+    businessPartner: "Mohanraj MJ",
+    accountDirector: "Sipin Sidharthan",
+    accountExecutive: "Mark Casumpang", 
+    empWorkLocation: "PH - SFS / PH - FLT",
+    empWorkSetup: "Hybrid",
+    clientLocation: "AUS - Australia",
+    industry: "Technology - IT Services", 
+    primaryContact: "Gail Collins, Mike Parry, Dianne Cordin",
+    primaryEmail: "Gail.Collins@ethan.com.au, mike.parry@ethan.com.au, dianne.cordin@ethan.com.au",
+    secondaryContact: "Rahoul Das, Craig Noonan", 
+    secondaryEmail: "Rahoul.das@ethan.com.au, Craig.noonan@ethan.com.au", 
+    website: "https://ethan.global/",
+    overview: "Australian-owned IT services company providing comprehensive technology and financial support solutions. They specialize in managed services, network security, and business technology optimization.",
+    tools: "• Windows App\n• N-able\n• Genesys\n• Mitel / Ignite\n• Microsoft Office Suite\n• GlobalProtect\n• Copilot\n• BlackFog\n• TeamViewer\n• Microsoft Authenticator\n• AX Dynamics\n• Snowboad", 
+    purpose: "• Used to access the Virtual Desktop for GEO location–sensitive Microsoft logins\n• Used to remotely connect to users’ machines and servers\n• Main Service Desk tool used to receive and manage calls\n• Call management tools used by other teams\n• Productivity applications used across the organization\n• Used for VPN access\n• Used by all Ethan employees for research and productivity assistance\n• Monitoring tool used for Ethan’s cybersecurity protection\n• Secondary remote access tool if N-able is not available\n• Used for authentication and security for all Ethan accounts\n• Order Management Tool\n• Kanban", 
+    positionTitle: "• System Engineer L3 / L2 / Wintel / Public\n• Senior System Engineer / Project Engineer\n• Network & Security Engineer (Senior / Project)\n• EUC Engineer / M365 Specialist\n• Senior Service Desk Analyst\n• Service Delivery Manager / Support\n• ITIL Change / Major Incident / Service Assurance\n• Billing Analyst / Accounts Receivable Specialist\n• Commercial Analyst / Sales Support Specialist\n• Order Management Specialist\n• Senior Provisioning Agent\n• Fleet and Asset Management\n• Customer Channel Analyst / Senior Analyst", 
+    positionOverview: ""
+},
     {
         name: "FBMB", 
         status: "Active", 
@@ -2447,32 +2470,31 @@ const allClients = [
         positionTitle: "-", 
         positionOverview: "-"
     },
-
    {
-    name: "Besix", 
-    status: "Active", 
-    entityName: "N.V. BESIX S.A.",
-    serviceLocation: "Philippines",
-    evServiceModel: "Staff Extension",
-    program: ["Software Development"],
-    businessPartner: "Paulene Magnaye",
-    accountDirector: "Sipin Sidharthan",
-    accountExecutive: "Joeri (+ Koen)", 
-    empWorkLocation: "PH - FLT / EBSI",
-    empWorkSetup: "Hybrid",
-    clientLocation: "BEL - Belgium",
-    industry: "Construction", 
-    primaryContact: "Werner Godaert",
-    primaryEmail: "werner.godaert@besix.com",
-    secondaryContact: "Jonathan Harford", 
-    secondaryEmail: "jonathan.harford@besix.com", 
-    website: "https://www.besix.com/",
-    overview: "BESIX is a leading Belgian group, operating in the construction, property development, and concessions sectors worldwide.",
-    tools: "-", 
-    purpose: "-", 
-    positionTitle: "• Senior ERP Administrator\n• Business Analyst\n• Senior Software Engineer", 
-    positionOverview: ""
-},
+        name: "Besix", 
+        status: "Active", 
+        entityName: "N.V. BESIX S.A.",
+        serviceLocation: "Philippines",
+        evServiceModel: "Staff Extension",
+        program: ["Software Development"],
+        businessPartner: "Ana Martela Dujunco", 
+        accountDirector: "Sipin Sidharthan",
+        accountExecutive: "Joeri (+ Koen)", 
+        empWorkLocation: "PH - FLT / EBSI",
+        empWorkSetup: "Hybrid",
+        clientLocation: "BEL - Belgium",
+        industry: "Construction", 
+        primaryContact: "Werner Godaert",
+        primaryEmail: "werner.godaert@besix.com",
+        secondaryContact: "Jonathan Harford", 
+        secondaryEmail: "jonathan.harford@besix.com", 
+        website: "https://www.besix.com/",
+        overview: "BESIX is a leading Belgian group, operating in the construction, property development, and concessions sectors worldwide.",
+        tools: "-", 
+        purpose: "-", 
+        positionTitle: "Senior ERP Administrator\nBusiness Analyst\nSenior Software Engineer", 
+        positionOverview: ""
+    },
     {
         name: "Bigo", 
         status: "Active", 
@@ -2480,7 +2502,7 @@ const allClients = [
         serviceLocation: "Philippines",
         evServiceModel: "Staffing Solutions",
         program: ["Business Support", "Marketing"],
-        businessPartner: "Paulene Magnaye",
+        businessPartner: "Ana Martela Dujunco",
         accountDirector: "Sipin Sidharthan",
         accountExecutive: "NA", 
         empWorkLocation: "PH - FLT / EBSI",
@@ -2496,30 +2518,30 @@ const allClients = [
         tools: "-", purpose: "-", positionTitle: "-", positionOverview: "-"
     },
     {
-    name: "Dangerous Goods Network", 
-    status: "Active", 
-    entityName: "Dangerous Goods Network Pty Ltd",
-    serviceLocation: "Philippines",
-    evServiceModel: "Managed Services",
-    program: ["Customer Service"],
-    businessPartner: "Paulene Magnaye",
-    accountDirector: "Sipin Sidharthan",
-    accountExecutive: "Mark Casumpang", 
-    empWorkLocation: "PH - FLT / EBSI",
-    empWorkSetup: "Work From Home",
-    clientLocation: "AUS - Australia",
-    industry: "Logistics", 
-    primaryContact: "Andrew Hahn",
-    primaryEmail: "andrew.hahn@marair.com.au",
-    secondaryContact: "Philip Kwok", 
-    secondaryEmail: "philip@marair.com.au", 
-    website: "https://dgnetwork.com.au/",
-    overview: "Specializes in the safe transport and logistics management of hazardous materials and dangerous goods.",
-    tools: "• Transvirtual\n• Zendesk\n• Cartoncloud\n• MS Office Suite", 
-    purpose: "• Transvirtual is used for logistics tracking and transport management.\n• Zendesk is a CRM tool used for order management and customer support.\n• Cartoncloud is an inventory management platform for warehouse operations.\n• MS Office Suite is used for various administrative tasks and reports.", 
-    positionTitle: "Customer Service Assistant", 
-    positionOverview: "-"
-},
+        name: "Dangerous Goods Network", 
+        status: "Active", 
+        entityName: "Dangerous Goods Network Pty Ltd",
+        serviceLocation: "Philippines",
+        evServiceModel: "Managed Services",
+        program: ["Customer Service"],
+        businessPartner: "Ana Martela Dujunco",
+        accountDirector: "Sipin Sidharthan",
+        accountExecutive: "Mark Casumpang", 
+        empWorkLocation: "PH - FLT / EBSI",
+        empWorkSetup: "Work From Home",
+        clientLocation: "AUS - Australia",
+        industry: "Logistics", 
+        primaryContact: "Andrew Hahn",
+        primaryEmail: "andrew.hahn@marair.com.au",
+        secondaryContact: "Philip Kwok", 
+        secondaryEmail: "philip@marair.com.au", 
+        website: "https://dgnetwork.com.au/",
+        overview: "Specializes in the safe transport and logistics management of hazardous materials and dangerous goods.",
+        tools: "• Transvirtual\n• Zendesk\n• Cartoncloud\n• MS Office Suite", 
+        purpose: "• Transvirtual is used for logistics tracking and transport management.\n• Zendesk is a CRM tool used for order management and customer support.\n• Cartoncloud is an inventory management platform for warehouse operations.\n• MS Office Suite is used for various administrative tasks and reports.", 
+        positionTitle: "Customer Service Assistant", 
+        positionOverview: "-"
+    },
     {
         name: "Deliberate Capital", 
         status: "Active", 
@@ -2527,7 +2549,7 @@ const allClients = [
         serviceLocation: "Philippines",
         evServiceModel: "Staffing Solutions",
         program: ["F&A"],
-        businessPartner: "Paulene Magnaye",
+        businessPartner: "Ana Martela Dujunco",
         accountDirector: "Sipin Sidharthan",
         accountExecutive: "Mark Casumpang", 
         empWorkLocation: "PH - FLT / EBSI",
@@ -2541,81 +2563,81 @@ const allClients = [
         overview: "An investment management firm focused on sustainable and impact-driven financial strategies.",
         tools: "-", purpose: "-", positionTitle: "Finance and Operations Manager", positionOverview: "-"
     },
-  {
-    name: "Modibodi", 
-    status: "Active", 
-    entityName: "Modibodi Pty Ltd",
-    serviceLocation: "Philippines",
-    evServiceModel: "Managed Services",
-    program: ["Customer Service"],
-    businessPartner: "Paulene Magnaye",
-    accountDirector: "Sipin Sidharthan",
-    accountExecutive: "Mark Casumpang", 
-    empWorkLocation: "PH - FLT / EBSI",
-    empWorkSetup: "Work From Home",
-    clientLocation: "AUS - Australia",
-    industry: "Retail / E-Commerce", 
-    primaryContact: "Daniel Habashy",
-    primaryEmail: "danielhabashy@modibodi.com",
-    secondaryContact: "Demanie Castro", 
-    secondaryEmail: "demaniecastro@modibodi.com", 
-    website: "https://www.modibodi.com/",
-    overview: "An innovative Australian brand specializing in leak-proof apparel and sustainable personal care products.",
-    tools: "• Gorgias\n• Shopify", 
-    purpose: "• CRM\n• E-commerce", 
-    positionTitle: "Customer Experience Assistant", 
-    positionOverview: "-"
-},
     {
-    name: "Razor Group", 
-    status: "Active", 
-    entityName: "Razor HQ GmBH & Co., KG",
-    serviceLocation: "Philippines",
-    evServiceModel: "Staff Extension",
-    program: ["Business Support"],
-    businessPartner: "Paulene Magnaye",
-    accountDirector: "Sipin Sidharthan",
-    accountExecutive: "Mark Casumpang", 
-    empWorkLocation: "PH - FLT / EBSI",
-    empWorkSetup: "Work From Home",
-    clientLocation: "DEU - Germany",
-    industry: "Retail / E-Commerce", 
-    primaryContact: "Raja",
-    primaryEmail: "rajalakshmi.venkatanarayanan@razor-group.com",
-    secondaryContact: "Muskan", 
-    secondaryEmail: "muskan.sharma@razor-group.com", 
-    website: "https://stryze.com/en/",
-    overview: "A global e-commerce aggregator that acquires and scales winning brands in the digital marketplace.",
-    tools: "• Hubspot\n• Valoreo", 
-    purpose: "• Marketing and campaign management", 
-    positionTitle: "SEO Content Specialist", 
-    positionOverview: "-"
-},
-   {
-    name: "Techcorr", 
-    status: "Active", 
-    entityName: "TechCorr India Private Limited",
-    serviceLocation: "Philippines",
-    evServiceModel: "Staffing Solutions",
-    program: ["Business Support"],
-    businessPartner: "Paulene Magnaye",
-    accountDirector: "Sipin Sidharthan",
-    accountExecutive: "Rachna Gaba", 
-    empWorkLocation: "PH - FLT / EBSI",
-    empWorkSetup: "Work From Home",
-    clientLocation: "USA - United States of America",
-    industry: "Asset Management", 
-    primaryContact: "Prakash Minch",
-    primaryEmail: "pminch@techcorr.com, prakashminch@gmail.com",
-    secondaryContact: "-", 
-    secondaryEmail: "-", 
-    website: "https://www.techcorr.com/",
-    overview: "Provides comprehensive inspection, testing, and asset integrity management services for global industries.",
-    tools: "-", 
-    purpose: "-", 
-    positionTitle: "• Quality Specialist\n• Oil Inspector", 
-    positionOverview: "-"
-},
+        name: "Modibodi", 
+        status: "Active", 
+        entityName: "Modibodi Pty Ltd",
+        serviceLocation: "Philippines",
+        evServiceModel: "Managed Services",
+        program: ["Customer Service"],
+        businessPartner: "Ana Martela Dujunco",
+        accountDirector: "Sipin Sidharthan",
+        accountExecutive: "Mark Casumpang", 
+        empWorkLocation: "PH - FLT / EBSI",
+        empWorkSetup: "Work From Home",
+        clientLocation: "AUS - Australia",
+        industry: "Retail / E-Commerce", 
+        primaryContact: "Daniel Habashy",
+        primaryEmail: "danielhabashy@modibodi.com",
+        secondaryContact: "Demanie Castro", 
+        secondaryEmail: "demaniecastro@modibodi.com", 
+        website: "https://www.modibodi.com/",
+        overview: "An innovative Australian brand specializing in leak-proof apparel and sustainable personal care products.",
+        tools: "• Gorgias\n• Shopify", 
+        purpose: "• CRM\n• E-commerce", 
+        positionTitle: "Customer Experience Assistant", 
+        positionOverview: "-"
+    },
+    {
+        name: "Razor Group", 
+        status: "Active", 
+        entityName: "Razor HQ GmBH & Co., KG",
+        serviceLocation: "Philippines",
+        evServiceModel: "Staff Extension",
+        program: ["Business Support"],
+        businessPartner: "Ana Martela Dujunco",
+        accountDirector: "Sipin Sidharthan",
+        accountExecutive: "Mark Casumpang", 
+        empWorkLocation: "PH - FLT / EBSI",
+        empWorkSetup: "Work From Home",
+        clientLocation: "DEU - Germany",
+        industry: "Retail / E-Commerce", 
+        primaryContact: "Raja",
+        primaryEmail: "rajalakshmi.venkatanarayanan@razor-group.com",
+        secondaryContact: "Muskan", 
+        secondaryEmail: "muskan.sharma@razor-group.com", 
+        website: "https://stryze.com/en/",
+        overview: "A global e-commerce aggregator that acquires and scales winning brands in the digital marketplace.",
+        tools: "• Hubspot\n• Valoreo", 
+        purpose: "• Marketing and campaign management", 
+        positionTitle: "SEO Content Specialist", 
+        positionOverview: "-"
+    },
+    {
+        name: "Techcorr", 
+        status: "Active", 
+        entityName: "TechCorr India Private Limited",
+        serviceLocation: "Philippines",
+        evServiceModel: "Staffing Solutions",
+        program: ["Business Support"],
+        businessPartner: "Ana Martela Dujunco",
+        accountDirector: "Sipin Sidharthan",
+        accountExecutive: "Rachna Gaba", 
+        empWorkLocation: "PH - FLT / EBSI",
+        empWorkSetup: "Work From Home",
+        clientLocation: "USA - United States of America",
+        industry: "Asset Management", 
+        primaryContact: "Prakash Minch",
+        primaryEmail: "pminch@techcorr.com, prakashminch@gmail.com",
+        secondaryContact: "-", 
+        secondaryEmail: "-", 
+        website: "https://www.techcorr.com/",
+        overview: "Provides comprehensive inspection, testing, and asset integrity management services for global industries.",
+        tools: "-", 
+        purpose: "-", 
+        positionTitle: "• Quality Specialist\n• Oil Inspector", 
+        positionOverview: "-"
+    },
     {
         name: "Uniquest (PH)", 
         status: "Active", 
@@ -2986,26 +3008,11 @@ function performSearch() {
     const userData = searchInput.value.trim().toLowerCase();
     suggestionBox.innerHTML = "";
 
-    const topButtonsDiv = document.createElement('div');
-    topButtonsDiv.style.width = "100%";
-    topButtonsDiv.style.display = "flex";
-    topButtonsDiv.style.gap = "10px";
-    topButtonsDiv.style.marginBottom = "15px";
-    topButtonsDiv.style.justifyContent = "center";
-
-    const bpBtn = document.createElement('button');
-    bpBtn.innerText = "Business Partners";
-    bpBtn.onclick = () => { smoothNavigate('business.html'); };
-
-    topButtonsDiv.appendChild(bpBtn);
-    suggestionBox.appendChild(topButtonsDiv); 
-
     let filteredResults = [];
     if (userData) {
         filteredResults = allClients.filter(client => {
             const nameMatch = client.name.toLowerCase().includes(userData);
             
-    
             const programMatch = Array.isArray(client.program) 
                 ? client.program.some(p => p.toLowerCase().includes(userData))
                 : client.program.toLowerCase().includes(userData);
@@ -3016,7 +3023,6 @@ function performSearch() {
         });
     }
 
-    
     if (userData && filteredResults.length > 0) {
         modal.style.display = "flex";
         modal.querySelector("h2").innerText = `Results for "${userData}"`;
@@ -3052,10 +3058,7 @@ function createClientButton(client, container) {
     const btn = document.createElement('button');
     const programDisplay = Array.isArray(client.program) ? client.program.join(", ") : client.program;
     
-    
     const isInactive = client.status && client.status.toLowerCase() === 'inactive';
-
-    
     const displayName = isInactive ? `${client.name} (Inactive)` : client.name;
 
     btn.innerHTML = `<strong>${displayName}</strong><br><small style="opacity:0.8; font-size: 0.8rem;">${programDisplay}</small>`;
@@ -3063,7 +3066,6 @@ function createClientButton(client, container) {
     btn.style.width = "100%";
     btn.style.textAlign = "left";
     btn.style.marginBottom = "8px";
-    
     
     if (isInactive) {
         btn.style.backgroundColor = "#ef4444"; 
@@ -3083,11 +3085,6 @@ function populateSuggestions() {
     if (!suggestionBox) return;
 
     suggestionBox.innerHTML = ""; 
-
-    
-    bpBtn.innerText = "Business Partners";
-    bpBtn.onclick = () => { smoothNavigate('business.html'); };
-    suggestionBox.appendChild(bpBtn);
 
     allClients.forEach(client => {
         const btn = document.createElement('button');
@@ -3134,17 +3131,116 @@ function quickSearch(programName) {
         performSearch(); 
     }
 }
-function checkLogin() {
-    const user = document.getElementById('loginUsername').value;
-    const pass = document.getElementById('loginPassword').value;
+window.addEventListener('load', function() {
+    if (sessionStorage.getItem('isLoggedIn') === 'true') {
+        const loginSection = document.getElementById('loginSection');
+        const mainContent = document.getElementById('mainContent');
+        if (loginSection && mainContent) {
+            loginSection.style.display = 'none';
+            mainContent.style.display = 'block';
+        }
+    }
+});
 
-    if (user === 'admin' && pass === 'admin123') {
+function checkLogin() {
+    const userInput = document.getElementById('loginUsername');
+    const passInput = document.getElementById('loginPassword');
+    const errorMsg = document.getElementById('loginError');
+    const loginBox = document.querySelector('.login-box');
+
+    const user = userInput.value.trim();
+    const pass = passInput.value.trim();
+
+    userInput.classList.remove('input-error');
+    passInput.classList.remove('input-error');
+    loginBox.classList.remove('shake');
+
+    if (user === "" || pass === "") {
+        errorMsg.innerHTML = "<strong>Missing Credentials:</strong> Please enter your username and password.";
+        errorMsg.style.display = 'block';
+        
+        if (user === "") userInput.classList.add('input-error');
+        if (pass === "") passInput.classList.add('input-error');
+        
+        loginBox.classList.add('shake');
+        return;
+    }
+
+    if (user === 'adminneli' && pass === 'sopretty') {
+        sessionStorage.setItem('isLoggedIn', 'true');
+        errorMsg.style.display = 'none';
+        
         document.getElementById('loginSection').style.display = 'none';
         document.getElementById('mainContent').style.display = 'block';
-    } else {
-        document.getElementById('loginError').style.display = 'block';
+    } 
+    else {
+        loginBox.classList.add('shake');
+        if (user !== 'admin') {
+            errorMsg.innerText = "Invalid Username. Please try again.";
+            userInput.classList.add('input-error');
+        } else {
+            errorMsg.innerText = "Invalid Password. Please try again.";
+            passInput.classList.add('input-error');
+        }
+        errorMsg.style.display = 'block';
     }
 }
+
+function logout() {
+    sessionStorage.removeItem('isLoggedIn');
+
+    const userInput = document.getElementById('loginUsername');
+    const passInput = document.getElementById('loginPassword');
+    
+    userInput.value = "";
+    passInput.value = "";
+    userInput.classList.remove('input-error');
+    passInput.classList.remove('input-error');
+
+    const errorMsg = document.getElementById('loginError');
+    errorMsg.style.display = 'none';
+
+    document.getElementById('mainContent').style.display = 'none';
+    document.getElementById('loginSection').style.display = 'flex';
+}
+
+function showMainContent() {
+    document.getElementById('loginSection').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+}
+
+window.onload = function() {
+    if (sessionStorage.getItem('isLoggedIn') === 'true') {
+        if(document.getElementById('loginSection')) {
+            showMainContent();
+        }
+    }
+}
+function logout() {
+    const mainContent = document.getElementById('mainContent');
+    mainContent.classList.add('logging-out-process');
+
+    setTimeout(() => {
+        sessionStorage.removeItem('isLoggedIn');
+        
+        document.getElementById('loginUsername').value = "";
+        document.getElementById('loginPassword').value = "";
+        document.getElementById('loginError').style.display = 'none';
+
+        mainContent.style.display = 'none';
+        mainContent.classList.remove('logging-out-process');
+        document.getElementById('loginSection').style.display = 'flex';
+    }, 450); 
+}
+
+window.addEventListener('load', function() {
+    if (sessionStorage.getItem('isLoggedIn') === 'true') {
+        if (document.getElementById('loginSection')) {
+            document.getElementById('loginSection').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }
+    }
+});
 document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         const activeElement = document.activeElement;
@@ -3153,9 +3249,3 @@ document.addEventListener('keypress', function (e) {
         }
     }
 });
-function logout() {
-    document.getElementById('mainContent').style.display = 'none';
-    document.getElementById('loginSection').style.display = 'flex';
-    document.getElementById('loginUsername').value = '';
-    document.getElementById('loginPassword').value = '';
-}
