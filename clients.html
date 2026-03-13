@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Data</title>
+    <title>Client Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img\logoicon.jpg">
     <style>
@@ -69,16 +69,14 @@
             background: rgba(255, 255, 255, 0.05);
             margin: 15px 0;
         }
-            .status-active {
-                background: #064e3b !important; 
-                color: #34d399 !important;      
-            }
-
-            
-            .status-inactive {
-                background: #7f1d1d !important; 
-                color: #fca5a5 !important;      
-            }
+        .status-active {
+            background: #064e3b !important; 
+            color: #34d399 !important;      
+        }
+        .status-inactive {
+            background: #7f1d1d !important; 
+            color: #fca5a5 !important;      
+        }
     </style>
 </head>
 <body style="background-color: #0f172a; color: #f1f5f9; font-family: sans-serif;">
@@ -95,6 +93,14 @@
                     <h3>Operational Details</h3>
                     <div class="info-item"><label>Status</label><p id="disp-status" class="badge">-</p></div>
                     
+                    <div class="info-item"><label>Source</label><p id="disp-source">-</p></div>
+                    <div class="info-item"><label>Date of Signing</label><p id="disp-signing">-</p></div>
+                    
+                    <div class="info-item"><label>Client Attrition Date</label><p id="disp-attritionDate">-</p></div>
+                    <div class="info-item"><label>Client Attrition Reason</label><p id="disp-attritionReason">-</p></div>
+                    
+                    <div class="divider"></div>
+
                     <div class="info-item"><label>Program</label><p id="disp-program">-</p></div>
                     <div class="info-item"><label>EV Service Model</label><p id="disp-evServiceModel">-</p></div>
                     
@@ -120,6 +126,9 @@
                             <div class="info-item"><label>Client Industry</label><p id="disp-clientIndustry">-</p></div>
                             <div class="info-item"><label>Client Location (Country)</label><p id="disp-clientLocation">-</p></div>
                             <div class="info-item"><label>Website</label><p><a id="disp-website" href="#" target="_blank" style="color: #34d399; text-decoration: none; font-weight: bold;">Visit Link</a></p></div>
+                            
+                            <div class="info-item"><label>Company Revenue (USD)</label><p id="disp-revenue">-</p></div>
+                            <div class="info-item"><label>Number of Employees</label><p id="disp-employees">-</p></div>
                         </div>
                     </div>
 
@@ -154,36 +163,35 @@
                     </div>
 
                     <div class="info-block">
-                    <h3>Tools & Purpose</h3>
-                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-                        <thead>
-                            <tr style="text-align: left; border-bottom: 2px solid rgba(16, 185, 129, 0.3);">
-                                <th style="padding: 10px; color: #10b981; font-size: 0.75rem; text-transform: uppercase; width: 30%;">Tool</th>
-                                <th style="padding: 10px; color: #10b981; font-size: 0.75rem; text-transform: uppercase;">Purpose</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tools-table-body">
-                            </tbody>
-                    </table>
+                        <h3>Tools & Purpose</h3>
+                        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                            <thead>
+                                <tr style="text-align: left; border-bottom: 2px solid rgba(16, 185, 129, 0.3);">
+                                    <th style="padding: 10px; color: #10b981; font-size: 0.75rem; text-transform: uppercase; width: 30%;">Tool</th>
+                                    <th style="padding: 10px; color: #10b981; font-size: 0.75rem; text-transform: uppercase;">Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tools-table-body"></tbody>
+                        </table>
                     </div>
 
                     <div class="info-block">
-                    <h3>Position Details</h3>
-                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-                        <thead>
-                            <tr style="text-align: left; border-bottom: 2px solid rgba(16, 185, 129, 0.3);">
-                                <th style="padding: 10px; color: #10b981; font-size: 0.75rem; text-transform: uppercase; width: 30%;">Position</th>
-                                <th style="padding: 10px; color: #10b981; font-size: 0.75rem; text-transform: uppercase;">Position Overview</th>
-                            </tr>
-                        </thead>
-                        <tbody id="position-table-body">
-                            </tbody>
-                    </table>
+                        <h3>Position Details</h3>
+                        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                            <thead>
+                                <tr style="text-align: left; border-bottom: 2px solid rgba(16, 185, 129, 0.3);">
+                                    <th style="padding: 10px; color: #10b981; font-size: 0.75rem; text-transform: uppercase; width: 30%;">Position</th>
+                                    <th style="padding: 10px; color: #10b981; font-size: 0.75rem; text-transform: uppercase;">Position Overview</th>
+                                </tr>
+                            </thead>
+                            <tbody id="position-table-body"></tbody>
+                        </table>
                     </div>
-                </div> </div> 
+                </div> 
+            </div> 
         </div>
     </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
