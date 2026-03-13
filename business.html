@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Partners Directory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logoicon.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f172a; 
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header-section {
+            text-align: center;
+            padding: 50px 20px;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(16, 185, 129, 0.1) 0%, rgba(15, 23, 42, 0) 100%);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: #10b981;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .directory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            width: 95%;
+            max-width: 1400px;
+            padding: 20px 0 80px;
+            align-items: stretch; 
+        }
+
+        .partner-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .partner-card:hover {
+            border-color: #10b981;
+            background: rgba(30, 41, 59, 0.7);
+            transform: translateY(-5px);
+        }
+
+        .partner-name {
+            font-size: 1.25rem;
+            margin: 0 0 15px 0;
+            color: #f8fafc;
+            font-weight: 700;
+            border-left: 4px solid #10b981;
+            padding-left: 15px;
+        }
+
+        .company-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .company-list li {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .company-list li::before {
+            content: "•";
+            color: #10b981;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.2em;
+            font-size: 1.2rem;
+        }
+
+        .home-edge-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            color: #f1f5f9;
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+        }
+
+        .home-edge-btn:hover {
+            background: rgba(16, 185, 129, 0.2);
+            border-color: #10b981;
+            color: #10b981;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .directory-grid {
+                grid-template-columns: 1fr;
+            }
+            .home-edge-btn {
+                top: 10px;
+                left: 10px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="home-edge-btn" title="Back to Search">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+    </a>
+
+    <div class="header-section">
+        <span class="subtitle">Eastvantage Operations</span>
+        <h1>Business Partners Directory</h1>
+    </div>
+
+    <div class="directory-grid">
+        <div class="partner-card">
+            <h2 class="partner-name">Nelien Tila-on</h2>
+            <ul class="company-list">
+                <li>Abacus Service Corporation</li>
+                <li>Bundled Management</li>
+                <li>CATO</li>
+                <li>Cleveland Kitchen</li>
+                <li>El Connect</li>
+                <li>Henry Jackson Foundation</li>
+                <li>Online Therapy Centre</li>
+                <li>Speedie Waste</li>
+                <li>TeamHealth</li>
+                <li>Trafman Solutions</li>
+                <li>Verifact</li>
+                <li>WorldView LTD</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Mohanraj MJ</h2>
+            <ul class="company-list">
+                <li>ACMB</li>
+                <li>DE VETTER</li>
+                <li>Ethan Group</li>
+                <li>FBMB</li>
+                <li>Finexpert</li>
+                <li>GGR Recycling</li>
+                <li>GKW</li>
+                <li>Paradigm</li>
+                <li>Polytra</li>
+                <li>Spot Buy Center</li>
+                <li>Terra Construct</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Jonas Soria</h2>
+            <ul class="company-list">
+                <li>Airthings</li>
+                <li>Earth Optics</li>
+                <li>Halcyon</li>
+                <li>Learnship</li>
+                <li>Optimy</li>
+                <li>Pact Group</li>
+                <li>Promosuns</li>
+                <li>TYN - Tyneso</li>
+                <li>River Cruise</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Ana Martela Dujunco</h2>
+            <ul class="company-list">
+                <li>CloudTech24</li>
+                <li>Ethan Group</li>
+                <li>AED Philippines</li>
+                <li>Arabian Establishment</li>
+                <li>Espresso Displays</li>
+                <li>Maze Map</li>
+                <li>Network Intelligence</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Paulene Magnaye</h2>
+            <ul class="company-list">
+                <li>Besix</li>
+                <li>Bigo</li>
+                <li>Dangerous Goods Network</li>
+                <li>Deliberate Capital</li>
+                <li>Modibodi</li>
+                <li>Razor Group</li>
+                <li>Techcorr</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Glenda Felio</h2>
+            <ul class="company-list">
+                <li>Ace Displays</li>
+                <li>Expleo Solutions Limited</li>
+                <li>FEI Systems</li>
+                <li>Riverstreamz</li>
+                <li>Solutions30</li>
+                <li>Workforge</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Vishnu Prakash Padmanabhan</h2>
+            <ul class="company-list">
+                <li>Bramble</li>
+                <li>FORMS EXPRESS</li>
+                <li>GK Software</li>
+                <li>Lucrotec</li>
+                <li>Paradigm (SD)</li>
+                <li>Spot Buy Center (Global)</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Kumareshan D</h2>
+            <ul class="company-list">
+                <li>DocuSketch</li>
+                <li>SEG- Society of Exploration Geophysicists</li>
+                <li>Uniquest</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Adrian Jay Gomez</h2>
+            <ul class="company-list">
+                <li>Hobbyking</li>
+                <li>Kindred Bravely</li>
+                <li>Magic</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Hajar EL ALAOUI</h2>
+            <ul class="company-list">
+                <li>Prompto</li>
+                <li>Unit T</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Abdelhak Bouroubaya</h2>
+            <ul class="company-list">
+                <li>BAS</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Anirudha Bhimrao Mahajan</h2>
+            <ul class="company-list">
+                <li>Altice</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Sandy Guevarra</h2>
+            <ul class="company-list">
+                <li>Uniquest (PH)</li>
+            </ul>
+        </div>
+
+        <div class="partner-card">
+            <h2 class="partner-name">Yves Vanderlinden</h2>
+            <ul class="company-list">
+                <li>ENECO</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
