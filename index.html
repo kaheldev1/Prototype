@@ -3,60 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> System Prototype</title>
+    <title>System Prototype</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img\logoicon.jpg">
+    <link rel="icon" type="image/png" href="img/logoicon.jpg">
 </head>
 <body>
-    <div class="top-banner">
-        <img src="img\Outlook-A blue bac.png" alt="Banner">
+
+    <div id="loginSection" class="login-container">
+        <div class="login-box">
+            <img src="img/logoicon.jpg" alt="Logo" class="login-logo" style="width: 80px; border-radius: 50%; margin-bottom: 15px;">
+            <h2 style="color: #10b981; margin-bottom: 10px;">System Login</h2>
+            <p style="font-size: 0.8rem; margin-bottom: 20px; opacity: 0.7;">Prototype</p>
+            
+            <input type="text" id="loginUsername" placeholder="Username" 
+                style="width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; text-align: center;">
+            
+            <input type="password" id="loginPassword" placeholder="Password" 
+                style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; text-align: center;">
+            
+            <button onclick="checkLogin()" style="width: 100%; padding: 12px; border-radius: 8px; background: #10b981; color: white; border: none; cursor: pointer; font-weight: bold;">
+                Login
+            </button>
+            
+            <p id="loginError" style="display:none; color: #ef4444; font-size: 0.85rem; margin-top: 15px;">❌ Mali ang Username o Password!</p>
+        </div>
     </div>
-    <div id="errorModal" class="modal">
-    <div class="modal-content" style="max-width: 600px;"> 
-        <span class="close-btn">&times;</span>
-        <h2 style="color: #ef4444; margin-bottom: 10px;">Search Not Found</h2>
-        <p>We couldn't find a match. Please try one of the keywords below:</p>
+
+    <div id="mainContent" style="display: none;">
         
-        <div id="suggestionBox" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; max-height: 300px; overflow-y: auto; padding: 10px; border-top: 1px solid rgba(255,255,255,0.1);">
+        <div class="top-banner">
+            <img src="img/Outlook-A blue bac.png" alt="Banner">
         </div>
-    </div>
-    </div>
-    <div class="container">
-        <header>
-    
-        </header>
-         
-        <div class="search-section">
-            <div class="search-input-wrapper">
-                <input type="text" id="searchInput" placeholder="Search here..." autofocus>
-                <button id="searchBtn">Search</button>
+
+        <div id="errorModal" class="modal">
+            <div class="modal-content" style="max-width: 600px;"> 
+                <span class="close-btn">&times;</span>
+                <h2 style="color: #ef4444; margin-bottom: 10px;">Search Not Found</h2>
+                <p>We couldn't find a match. Please try one of the keywords below:</p>
+                <div id="suggestionBox" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; max-height: 300px; overflow-y: auto; padding: 10px; border-top: 1px solid rgba(255,255,255,0.1);">
+                </div>
             </div>
-            <p id="errorMessage" class="error-text"></p>
+        </div>
+
+        <div class="container">
+            <header></header>
+            <div class="search-section">
+                <div class="search-input-wrapper">
+                    <input type="text" id="searchInput" placeholder="Search here..." autofocus>
+                    <button id="searchBtn">Search</button>
+                </div>
+                <p id="errorMessage" class="error-text"></p>
+            </div>
+        </div>
+
+        <div class="filter-container">
+            <div id="filterMenu" class="filter-menu">
+                <p>Browse by Program:</p>
+                <button onclick="quickSearch('RPO')">RPO</button>
+                <button onclick="quickSearch('Business Support')">Business Support</button>
+                <button onclick="quickSearch('Customer Service')">Customer Service</button>
+                <button onclick="quickSearch('F&A')">F&A (Finance)</button>
+                <button onclick="quickSearch('Software Development')">Software Dev</button>
+            </div>
+            <button id="filterToggle" class="filter-fab">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="21" x2="4" y2="14"></line>
+                    <line x1="4" y1="10" x2="4" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12" y2="3"></line>
+                    <line x1="20" y1="21" x2="20" y2="16"></line>
+                    <line x1="20" y1="12" x2="20" y2="3"></line>
+                    <line x1="1" y1="14" x2="7" y2="14"></line>
+                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                    <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+            </button>
         </div>
     </div>
-    <div class="filter-container">
-    <div id="filterMenu" class="filter-menu">
-    <p>Browse by Program:</p>
-    <button onclick="quickSearch('RPO')">RPO</button>
-    <button onclick="quickSearch('Business Support')">Business Support</button>
-    <button onclick="quickSearch('Customer Service')">Customer Service</button>
-    <button onclick="quickSearch('F&A')">F&A (Finance)</button>
-    <button onclick="quickSearch('Software Development')">Software Dev</button>
-    </div>
-    <button id="filterToggle" class="filter-fab">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="4" y1="21" x2="4" y2="14"></line>
-            <line x1="4" y1="10" x2="4" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="12"></line>
-            <line x1="12" y1="8" x2="12" y2="3"></line>
-            <line x1="20" y1="21" x2="20" y2="16"></line>
-            <line x1="20" y1="12" x2="20" y2="3"></line>
-            <line x1="1" y1="14" x2="7" y2="14"></line>
-            <line x1="9" y1="8" x2="15" y2="8"></line>
-            <line x1="17" y1="16" x2="23" y2="16"></line>
-        </svg>
-    </button>
-</div>
+
     <script src="script.js"></script>
 </body>
 </html>
