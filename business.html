@@ -42,7 +42,6 @@
             display: block;
         }
 
-        /* Binawasan ang minmax size mula 320px tungo sa 260px para mas maliit ang cards */
         .directory-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
@@ -52,7 +51,6 @@
             padding: 20px 0 80px;
         }
 
-        /* Ginawang mas compact ang padding ng card */
         .partner-card {
             background: rgba(30, 41, 59, 0.4);
             backdrop-filter: blur(10px);
@@ -76,7 +74,7 @@
         .role-keyword {
             display: inline-block;
             background: rgba(16, 185, 129, 0.1);
-            color: #10b981;
+            color: #8CC63F;
             font-weight: 800;
             text-transform: uppercase;
             font-size: 0.6rem;
@@ -102,7 +100,7 @@
 
         .company-list li::before {
             content: "•";
-            color: #10b981;
+            color: #8CC63F;
             margin-right: 10px;
             font-weight: bold;
         }
@@ -134,8 +132,8 @@
         }
 
         .side-btn:hover {
-            border-color: #10b981;
-            color: #10b981;
+            border-color: #8CC63F;
+            color: #8CC63F;
             transform: scale(1.05);
         }
 
@@ -194,8 +192,29 @@
             "Ana Martela Dujunco", "Glenda Felio", "Vishnu Prakash Padmanabhan",
             "Kumareshan D", "Adrian Jay Gomez", "Hajar EL ALAOUI",
             "Abdelhak Bouroubaya", "Anirudha Bhimrao Mahajan", 
-            "Sandy Guevarra", "Yves Vanderlinden", "Jade Dela Cruz"
+            "Sandy Guevarra", "Yves Vanderlinden", "Jade Dela Cruz",
+            "Ralph Kenneth Paras", "Martha May Canales", "Julia Cansino",
+            "Ifrah Ait-Oukir", "Gwen Paolo Guerrero"
         ];
+
+        if (typeof allClients !== 'undefined') {
+            const newClients = [
+                { "name": "Baytech BPO Corporation", "status": "Inactive", "businessPartner": "Ralph Kenneth Paras" },
+                { "name": "Intellitek", "status": "Inactive", "businessPartner": "Ralph Kenneth Paras" },
+                { "name": "One Simple Key", "status": "Inactive", "businessPartner": "Martha May Canales" },
+                { "name": "SIM - Managed Services", "status": "Inactive", "businessPartner": "Julia Cansino" },
+                { "name": "Simcorp", "status": "Inactive", "businessPartner": "Julia Cansino" },
+                { "name": "GRS Solutions", "status": "Inactive", "businessPartner": "Ifrah Ait-Oukir" },
+                { "name": "PAQ IT", "status": "Inactive", "businessPartner": "Gwen Paolo Guerrero" }
+            ];
+
+            newClients.forEach(newClient => {
+                const exists = allClients.some(c => c.name === newClient.name);
+                if (!exists) {
+                    allClients.push(newClient);
+                }
+            });
+        }
 
         const activeIcon = `
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
