@@ -401,7 +401,7 @@ const allClients = [
     status: "Inactive", 
     entityName: "Integrity Traffic, LLC",
     source: "Inbound Webform", 
-    dateOfSigning: "2017-23-08", 
+    dateOfSigning: "2017-08-23", 
     clientAttritionDate: "-", 
     clientAttritionReason: "-", 
     companyRevenue: "USD 25M – $50M (Estimate)", 
