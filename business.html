@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Business Partners</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="img/logoicon.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Partners</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logoicon.jpg">
     <style>
         body {
             margin: 0;
@@ -42,20 +42,22 @@
             display: block;
         }
 
+        /* Binawasan ang minmax size mula 320px tungo sa 260px para mas maliit ang cards */
         .directory-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+            gap: 15px; 
             width: 95%;
-            max-width: 1400px;
+            max-width: 1200px; 
             padding: 20px 0 80px;
         }
 
+        /* Ginawang mas compact ang padding ng card */
         .partner-card {
             background: rgba(30, 41, 59, 0.4);
             backdrop-filter: blur(10px);
             border-radius: 16px;
-            padding: 30px;
+            padding: 20px; 
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
         }
@@ -66,8 +68,8 @@
         }
 
         .partner-name {
-            font-size: 1.4rem;
-            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+            margin: 0 0 8px 0;
             color: #ffffff;
         }
 
@@ -77,10 +79,10 @@
             color: #10b981;
             font-weight: 800;
             text-transform: uppercase;
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             padding: 4px 10px;
             border-radius: 4px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             border: 1px solid rgba(16, 185, 129, 0.2);
         }
 
@@ -91,9 +93,9 @@
         }
 
         .company-list li {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #94a3b8;
-            padding: 5px 0;
+            padding: 4px 0;
             display: flex;
             align-items: center;
         }
@@ -105,7 +107,6 @@
             font-weight: bold;
         }
 
-   
         .action-buttons {
             position: fixed;
             top: 20px;
@@ -138,7 +139,6 @@
             transform: scale(1.05);
         }
 
-  
         .mode-inactive .side-btn#toggleViewBtn {
             background: #ef4444;
             color: white;
@@ -183,20 +183,18 @@
         <h1 id="directoryTitle">Business Partners Directory</h1>
     </div>
 
-    <div class="directory-grid" id="partnerGrid">
-        </div>
+    <div class="directory-grid" id="partnerGrid"></div>
 
     <script src="script.js"></script>
 
     <script>
         let isInactiveMode = false;
-
         const partnersList = [
             "Nelien Tila-on", "Mohanraj MJ", "Jonas Soria", 
             "Ana Martela Dujunco", "Glenda Felio", "Vishnu Prakash Padmanabhan",
             "Kumareshan D", "Adrian Jay Gomez", "Hajar EL ALAOUI",
             "Abdelhak Bouroubaya", "Anirudha Bhimrao Mahajan", 
-            "Sandy Guevarra", "Yves Vanderlinden"
+            "Sandy Guevarra", "Yves Vanderlinden", "Jade Dela Cruz"
         ];
 
         const activeIcon = `
