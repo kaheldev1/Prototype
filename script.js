@@ -561,7 +561,7 @@ const allClients = [
     empWorkSetup: "Work From Home",
     clientLocation: "USA - United States of America",
     industry: "Healthcare / Apparel", 
-    primaryContact: "Erin Nelson, Brooklyn Green",
+    primaryContact: "Erin Nelson, Brooklyn ",
     primaryEmail: "erin@kindredbravely.com",
     secondaryContact: "-", 
     secondaryEmail: "-", 
@@ -3468,7 +3468,7 @@ titles.forEach((title, index) => {
         <td style="
             padding: 15px 12px; 
             vertical-align: middle; /* Pinaka-importante: Para laging nasa gitna */
-            color: #10b981; 
+            color: #8CC63F; 
             font-weight: bold; 
             width: 25%;           /* Fix width para pantay-pantay lahat */
             text-align: left;
@@ -3545,7 +3545,7 @@ if (toolsTableBody && client.tools !== "-") {
             else if (id === 'disp-primaryEmail' || id === 'disp-secondaryEmail') {
                 const emails = mapping[id].split(', ');
                 element.innerHTML = emails.map(email => 
-                    email.trim() !== "-" ? `<a href="mailto:${email.trim()}" style="color: #34d399; display: block; margin-bottom: 5px; text-decoration: none;">${email.trim()}</a>` : "-"
+                    email.trim() !== "-" ? `<a href="mailto:${email.trim()}" style="color: #8CC63F; display: block; margin-bottom: 5px; text-decoration: none;">${email.trim()}</a>` : "-"
                 ).join('');
             } 
             else if (id === 'disp-primaryContact' || id === 'disp-secondaryContact') {
