@@ -148,7 +148,7 @@ summary::-webkit-details-marker { display: none; }
 .inactive .c-status-label { background-color: #ef4444 !important; }
 
 button {
-    background: #10b981;
+    background: #8CC63F;
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -645,7 +645,7 @@ button, .suggestion-btn, a, .info-item {
 
 .filter-menu button:hover {
     background: rgba(16, 185, 129, 0.15);
-    color: #10b981;
+    color: #8CC63F;
 }
 
 @keyframes popMenu {
