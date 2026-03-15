@@ -451,7 +451,7 @@ const allClients = [
     primaryEmail: "NA",
     secondaryContact: "NA", 
     secondaryEmail: "NA", 
-    website: "NA",
+    website: "https://invested.ph/",
     overview: "A leading education finance platform in the Philippines that provides student loans and financial literacy programs to underserved youth. By using a proprietary credit scoring algorithm that considers a student's future earnings potential, it helps high-potential learners complete their college education and successfully transition into the workforce.",
     tools: "NA", 
     purpose: "NA", 
@@ -2189,10 +2189,10 @@ const allClients = [
     "secondaryEmail": "NA",
     "website": "NA",
     "overview": "NA",
-    "tools": "Zendesk, Shopify",
-    "purpose": "CRM, E-commerce",
-    "positionTitle": "Customer Support Consultant",
-    "positionOverview": "NA"
+    "tools": "",
+    "purpose": "",
+    "positionTitle": "",
+    "positionOverview": ""
   },
   {
     "name": "BD Media",
